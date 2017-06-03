@@ -1,0 +1,37 @@
+---
+layout: default
+meta-title: Tachyons Templates
+meta-description: Free open source Tachyons Themes and templates up to date for Tachyons 4.7! An even faster way to develop websites in Tachyons!
+---
+
+<header class="sans-serif">
+    <div class="cover bg-left bg-center-l w-100 vh-75 dt" style="background-image: url(/img/bg.png)">
+        <div class="dtc v-mid">
+            <div class="tc-l ph3">
+                <!--pt4 pt5-m pt6-l-->
+                <div class="f2 f1-l fw2 white-90 mb0 lh-title">Tachyons Templates</div>
+                <h1 class="fw1 f3 white-80 mt3 mb4">Free Tachyons Themes and Templates</h1>
+                <a class="f6 no-underline grow dib v-mid white ba b--white ph3 pv2 mb3" href="/template-categories/all/">Browse All Templates</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="vh-100 dt w-100">
+  <div class="dtc v-mid">
+    <h1 class="f4 f3-m f2-l tc fw2 black-90 ma0 mb4 pa0">
+        Forever free, open source, and easy to use.
+    </h1>
+    <h2 class="f5 tc f4-m f3-l fw2 black-50 ma0 pa0 measure-wide center lh-copy">
+        Tachyons Templates is a collection of <strong>free to download Tachyons Themes and
+        templates</strong>. Our themes are open source and you can use them for any purpose, even
+        commercially!
+    </h2>
+  </div>
+</section>
+
+<section class="cf pt4 pb2 mw8 center">
+    {% for framework in site.frameworks reversed %}
+      {% include framework-card.html framework=framework %}
+    {% endfor %}
+</section>

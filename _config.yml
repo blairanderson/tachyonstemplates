@@ -1,0 +1,41 @@
+# Site Information
+license:          "MIT"
+license-url:      "https://github.com/blairanderson/tachyonstemplates/blob/gh-pages/LICENSE"
+author:           "Tachyons Templates"
+google_site_verification: ""
+bing_site_verification: "0C81C6A5BD3BAF86F4730D8C4A9BF223"
+# Site Settings
+baseurl:          ""
+
+# Build settings
+exclude:          [node_modules, sass-cache, _data]
+
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Server
+url:              https://www.tachyonstemplates.com
+enforce_ssl:      tachyonstemplates.com
+encoding:         UTF-8
+host:             0.0.0.0
+port:             9001
+
+# Gems
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - rouge
+
+# Collections
+collections:
+  templates:
+    output: true
+    permalink: /template-overviews/:title/
+
+# Pagination
+paginate: 5
+paginate_path: "/articles/page:num/"

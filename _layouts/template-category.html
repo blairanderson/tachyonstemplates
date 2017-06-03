@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include heading.html %}
+
+<div class="cf pt4 pb2 mw8 center">
+	{% for framework in site.frameworks reversed %}
+		{% if framework.categories contains page.slug %}
+			{% include framework-card.html framework=framework %}
+		{% endif %}
+	{% endfor %}
+</div>
+
+<div class="container">
+	{{ content }}
+</div>

@@ -1,0 +1,25 @@
+{
+  "name": "tachyonstemplates",
+  "title": "Tachyons Templates",
+  "version": "1.0.0",
+  "homepage": "http://www.tachyonstemplates.com",
+  "author": "TachyonsTemplates",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/blairanderson/tachyonstemplates/blob/gh-pages/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blairanderson/tachyonstemplates.git"
+  },
+  "dependencies": {
+    "async": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-data": "^1.2.1",
+    "request": "^2.81.0",
+    "tachyons-sass": "^4.7.1"
+  },
+  "scripts": {
+    "postinstall": "gulp"
+  }
+}

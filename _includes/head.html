@@ -1,0 +1,35 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page.meta-description }}">
+    <meta name="author" content="{{site.author}}">
+    {% if site.bing_site_verification %}<meta name="msvalidate.01" content="{{site.bing_site_verification}}" />{% endif %}
+    {% if site.google_site_verification %}<meta name="google-site-verification" content="{{site.google_site_verification}}">{% endif %}
+    <title>{% if page.meta-title == "Tachyons Templates" %}{{ page.meta-title }} - Free Tachyons Themes and Templates {% else %} {{ page.meta-title }} - Tachyons Templates {% endif %}</title>
+    <!-- Google+ Authorship -->
+    <link rel="author" href="https://plus.google.com/+tachyonstemplates">
+    <link rel="publisher" href="https://plus.google.com/+tachyonstemplates">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://tachyonstemplates.com{{ page.url }}">
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Libre+Franklin:400,100,100italic,200,200italic,300,300italic,400italic,500,600,500italic,600italic,700,700italic,800,900,800italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ " /css/main.css " | prepend: site.baseurl }}">
+    <!-- Feed -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}">
+    <!-- Fav Icon and Apple Touch Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicons/logo.png" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/img/favicons/logo.png" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="{% if page.meta-title == " Tachyons Templates " %}Free Tachyons Themes and Templates{% else %}{{ page.meta-title }}{% endif %}">
+    <meta property="og:site_name" content="Tachyons Templates">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{{ page.meta-description }}">
+    <meta property="og:image" content="/img/favicons/logo.png">
+    <meta property="og:url" content="https://tachyonstemplates.com{{ page.url }}">
+</head>
