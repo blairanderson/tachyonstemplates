@@ -2,17 +2,20 @@
 layout: default
 ---
 
-{% include heading.html %}
+{% include template-heading.html %}
 
 <div class="mw8 center">
 	<div class="cf">
 		<div class="fl w-40 pr5 pt3">
-			<div class="card sb-card">
-				<a class="sb-img" target="_blank" href="https://serverlessconsultants.github.io/tachyonstemplates-{{ page.slug }}/">
+			<div class="ba b--black-50">
+				<a class="sb-img" rel="nofollow noopener" target="_blank" href="{{ page.preview }}">
 					<img class="card-img-top img-fluid" src="{{ page.img-src }}" alt="{{ page.img-desc }}">
 				</a>
-				<div class="card-block download-links">
-				</div>
+				<div class="cf">
+					{% for link in page.external-links %}
+						<a href={{link.href}} target="_blank" class="bt b--black-50 pa2 dim db fl tc w-100 w-third-ns lh-title">{{link.title}}</a>
+				  {% endfor %}
+			  </div>
 			</div>
 
 			{% include disqus.html %}

@@ -31,7 +31,7 @@ meta-description: Free open source Tachyons Themes and templates up to date for 
 </section>
 
 <section class="cf pt4 pb2 mw8 center">
-    {% for framework in site.frameworks reversed %}
-      {% include framework-card.html framework=framework %}
-    {% endfor %}
+  {% for template in site.templates reversed %}
+    {% include template-card.html template=template %}
+  {% endfor %}
 </section>
