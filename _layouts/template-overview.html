@@ -13,7 +13,8 @@ layout: default
 				</a>
 				<div class="cf">
 					{% for link in page.external-links %}
-						<a href={{link.href}} target="_blank" class="bt b--black-50 pa2 dim db fl tc w-100 w-third-ns lh-title">{{link.title}}</a>
+						<a href={{link.href}} target="_blank" rel="nofollow noopener"
+						class="bt b--black-50 pa2 dim db fl tc w-100 w-third-ns lh-title">{{link.title}}</a>
 				  {% endfor %}
 			  </div>
 			</div>

@@ -11,11 +11,11 @@ img-src:		/img/templates/feather.png
 img-desc:		"feather landing page"
 external-links:
   - title: "Live Preview"
-    href: "https://coralproject.net"
+    href: "https://feathericons.com/"
   - title: "Download"
-    href: "github.com/"
+    href: "https://github.com/colebemis/feather/archive/master.zip"
   - title: "View Source"
-    href: "github.com/foo"
+    href: "https://github.com/colebemis/feather"
 layout:			template-overview
 
 meta-title: "Built using jekyll - feather was built to showcase an icon-set, but you can use it as a starting point to showcase anything."
