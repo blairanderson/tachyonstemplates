@@ -17,21 +17,35 @@ meta-description: Free open source Tachyons Themes and templates up to date for 
     </div>
 </header>
 
-<section class="vh-100 dt w-100">
+<div class="f4 f3-m f2-l tc fw2  black-50 ma4">Featured Templates</div>
+<hr class="measure-wide center">
+<section class="cf pt4 pb2 mw8 center">
+  {% for template in site.templates reversed %}
+    {% if template.categories contains 'featured' %}
+      {% include template-card.html template=template %}
+    {% endif %}
+  {% endfor %}
+</section>
+
+<section class="vh-50 dt w-100" style="background-color: rgb(90,128,245);">
   <div class="dtc v-mid">
-    <h1 class="f4 f3-m f2-l tc fw2 black-90 ma0 mb4 pa0">
+    <div class="f4 f3-m f2-l tc fw2  white ma0 mb4 pa0">
         Forever free, open source, and easy to use.
-    </h1>
-    <h2 class="f5 tc f4-m f3-l fw2 black-50 ma0 pa0 measure-wide center lh-copy">
+    </div>
+    <div class="f5 tc f4-m f3-l fw2  white-50 ma0 pa0 measure-wide center lh-copy">
         Tachyons Templates is a collection of <strong>free to download Tachyons Themes and
         templates</strong>. Our themes are open source and you can use them for any purpose, even
         commercially!
-    </h2>
+    </div>
   </div>
 </section>
 
+<div class="f4 f3-m f2-l tc fw2  black-50 ma4">Made with Tachyons</div>
+<hr class="measure-wide center">
 <section class="cf pt4 pb2 mw8 center">
   {% for template in site.templates reversed %}
-    {% include template-card.html template=template %}
+    {% if template.categories contains 'made-with-tachyons' %}
+      {% include template-card.html template=template %}
+    {% endif %}
   {% endfor %}
 </section>

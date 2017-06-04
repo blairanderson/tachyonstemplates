@@ -2,16 +2,27 @@
 layout: default
 ---
 
-{% include template-heading.html %}
+<div class="tc ph3 ph4-l">
+  <h1 class="f3 f2-m f-subheadline-l fw6 tc">
+    {{ page.title }}
+  </h1>
+  <p>{{ page.description }}</p>
+</div>
+
+<!-- Page Content -->
+<div class="db mw8 ph4 pv3 mv4 bg-black-10 br2 center">
+  <a href="/">Tachyons Templates</a>
+  /
+  {{ page.title }}
+</div>
+
 
 <div class="cf pt4 pb2 mw8 center">
-	{% for framework in site.frameworks reversed %}
-		{% if framework.categories contains page.slug %}
-			{% include framework-card.html framework=framework %}
-		{% endif %}
+	{% for template in site.templates reversed %}
+		{% include template-card.html template=template %}
 	{% endfor %}
 </div>
 
-<div class="container">
+<div class="cf w-100">
 	{{ content }}
 </div>

@@ -6,47 +6,45 @@ layout: default
 
 <div class="mw8 center">
 	<div class="cf">
-		<div class="fl w-40 pr5 pt3">
+		<div class="fl w-100 w-40-ns">
 			<div class="ba b--black-50">
-				<a class="sb-img" rel="nofollow noopener" target="_blank" href="{{ page.preview }}">
-					<img class="card-img-top img-fluid" src="{{ page.img-src }}" alt="{{ page.img-desc }}">
+				<a
+					rel="nofollow noopener"
+					target="_blank"
+					onclick="ga('send', 'event', 'external-links', 'Preview', '{{page.title}}');"
+					href="{{ page.external-links.preview.href }}">
+					<img class="" src="{{ page.img-src }}" alt="{{ page.img-desc }}">
 				</a>
 				<div class="cf">
 					{% for link in page.external-links %}
-						<a href={{link.href}} target="_blank" rel="nofollow noopener"
-						class="bt b--black-50 pa2 dim db fl tc w-100 w-third-ns lh-title">{{link.title}}</a>
+						<a
+						href={{link[1].href}}
+						target="_blank"
+						onclick="ga('send', 'event', 'external-links', '{{link[0]}}', '{{page.title}}');"
+						rel="nofollow noopener"
+						class="bt b--black-50 pa2 dim db fl tc w-100 w-third-ns lh-title">{{link[1].title}}</a>
 				  {% endfor %}
 			  </div>
 			</div>
-
 			{% include disqus.html %}
 		</div>
-		<div class="fl w-60">
-			<ul class="list-inline social-links">
-			</ul>
-			<!-- "db mw8 ph4 pv3 mv4 center" -->
-
-			<!-- <div class="bg-black-10 br2 ph4 pv2 mb4"> -->
-				<!-- <div class="card-block"> -->
-					<!-- <h3>Need Help?</h3> -->
-					<!-- <p>Feeling stuck? Have a look at some of the <strong><a href="/articles">guides and tutorials</a></strong> available on Tachyons Templates. Need something more? You can also <strong><a href="/tachyons-design-services">hire a designer</a></strong> to help you with your project or to create a custom build of any theme!</p> -->
-					<!-- <p>Feeling stuck? Need something more? You can <strong><a href="/tachyons-design-services">hire a designer</a></strong> to help you with your project or to create a custom build of any theme!</p> -->
-				<!-- </div> -->
-			<!-- </div> -->
-			<div class="bg-black-10 br2  ph4 pv2 mb4">
-				<div class="card-block">
-					<h3>Description:</h3>
-					<p>{{page.long-description}}</p>
+		<div class="fl w-100 w-60-ns">
+			<div class="ph2 ph4-ns">
+				<div class="bg-black-10 br2 pa2 ph4-ns mb4 mt4 mt0-ns">
+					<div class="">
+						<h3>Description:</h3>
+						<p>{{page.long-description}}</p>
+					</div>
 				</div>
-			</div>
-			<div class="bg-black-10 br2 ph4 pv2 mb4">
-				<div class="card-block">
-					<h3>Features:</h3>
-					<ul>
-						{% for feature in page.features %}
-						<li>{{ feature }}</li>
-						{% endfor %}
-					</ul>
+				<div class="bg-black-10 br2 pa2 ph4-ns mb4">
+					<div class="">
+						<h3>Features:</h3>
+						<ul>
+							{% for feature in page.features %}
+							<li>{{ feature }}</li>
+							{% endfor %}
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
