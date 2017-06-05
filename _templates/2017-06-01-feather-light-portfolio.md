@@ -1,8 +1,8 @@
 ---
-title:			"Feather Light Portfolio"
+title:			"Feather"
 layout:			template-overview
-slug:			   feather-light-portfolio
-src:			   /template-overviews/feather-light-portfolio
+slug:			   feather
+src:			   /template-overviews/feather
 background:  rgb(255,255,255)
 color:       rgb(0,0,0)
 categories:		open-source made-with-tachyons
