@@ -1,22 +1,13 @@
-TODOs for SHIPPING:
-
-- [ ] build a simple template!!!
-- [ ] build another simple template!
-- [ ] update styles for layouts/page
-- [ ] update styles for layouts/post
-- [ ] update styles for layouts/template-category
-- [ ] update styles for layouts/template-overview
-- [ ] google analytics
-
 # Tachyons Templates
 
-A library of open source, free to download, HTML starter templates for [Tachyons](http://tachyons.io/)
+A library of open source, free to download, HTML starter templates using [Tachyons](http://tachyons.io/)
 
 ## Current Templates and Themes
 
-There are currently 2 themes and templates available:
+There are currently 2 themes and templates available created by [Tachyons Templates](http://www.tachyonstemplates.com/):
 
-- [**Portfolio**](http://tachyonstemplates.com/template-overviews/creative/) - A one page creative theme.
+- [**Launchr**](http://www.tachyonstemplates.com/template-overviews/tachyons-launchr/) - A one page web app launch site.
+- [**TachyonsTemplates**](http://www.tachyonstemplates.com/template-overviews/tachyons/) - A one page web app launch site.
 
 ## Copyright and License
 
