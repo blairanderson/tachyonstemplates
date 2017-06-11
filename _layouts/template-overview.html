@@ -2,11 +2,25 @@
 layout: default
 ---
 
-{% include template-heading.html %}
+<article class="vh-50 dt w-100"  style="background-color: {{page.background}}">
+  <div class="dtc v-mid tc ph3 ph4-l" style="color: {{ page.color }}">
+    <h1 class="f3 f2-m f-subheadline-l fw6 tc">{{ page.title }}</h1>
+    <p class="f5 f4-m f2-l ">{{ page.description }}</p>
+  </div>
+</article>
+
+<!-- Page Content -->
+<div class="db mw8 ph4 pv3 mv4 bg-black-10 br2 center">
+  <a href="/">Tachyons Templates</a>
+  /
+  <a href="/template-categories/all/">All Templates & Themes</a>
+  /
+  <a href="{{page.url}}">{{ page.title }}</a>
+</div>
 
 <div class="mw8 center">
 	<div class="cf">
-		<div class="fl w-100 w-40-ns">
+		<div class="fl w-100 w-60-ns">
 			<div class="ba b--black-50">
 				<a
 					rel="nofollow noopener"
@@ -28,24 +42,26 @@ layout: default
 			</div>
 			{% include disqus.html %}
 		</div>
-		<div class="fl w-100 w-60-ns">
+		<div class="fl w-100 w-40-ns">
 			<div class="ph2 ph4-ns">
-				<div class="bg-black-10 br2 pa2 ph4-ns mb4 mt4 mt0-ns">
-					<div class="">
-						<h3>Description:</h3>
-						<p>{{page.long-description}}</p>
-					</div>
+				<div class="bg-black-10 br2 ph4 pv3 mb4 mt4 mt0-ns">
+					<h2 class="f2 pa0 ma0">Description:</h2>
+					<p class="f4 pa0 ma0">{{page.long-description}}</p>
 				</div>
-				<div class="bg-black-10 br2 pa2 ph4-ns mb4">
-					<div class="">
-						<h3>Features:</h3>
-						<ul>
-							{% for feature in page.features %}
-							<li>{{ feature }}</li>
-							{% endfor %}
-						</ul>
-					</div>
+				<div class="bg-black-10 br2 ph4 pv3 mb4">
+					<h3 class="f2 pa0 ma0">Features:</h3>
+					<ul class="pa0 ma0">
+						{% for feature in page.features %}<li class="f4 pa0 ma0">{{ feature }}</li>{% endfor %}
+					</ul>
 				</div>
+
+        <div class="bg-black-10 br2 ph4 pv3 mb4 mt4 mt0-ns">
+          <h2 class="f2 pa0 ma0">Need Help?</h2>
+          <p class="f4 pa0 ma0">
+            Need help figuring this out? Want a simple landing page?
+            <a href="http://www.serverlessconsultants.com/">Hire a developer to launch your site starting at $1000.00</a>
+          </p>
+        </div>
 			</div>
 		</div>
 	</div>
