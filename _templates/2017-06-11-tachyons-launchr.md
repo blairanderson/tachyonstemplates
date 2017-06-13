@@ -5,7 +5,7 @@ layout:			template-overview
 src:			   /template-overviews/tachyons-launchr
 background:  "#1e5799"
 color:       rgb(255,255,255)
-categories:		open-source featured
+categories:		open-source featured popular
 description:	"Mobile App Launch Site"
 img-src:		"https://rawgit.com/blairanderson/tachyons-launchr/master/screenshot.png"
 img-desc:		"Tachyons Launchr Landing Page"
@@ -21,7 +21,6 @@ external-links:
     href: "https://github.com/blairanderson/tachyons-launchr/"
 
 meta-title: "Built using tachyons - Launchr was built to display a couple iphone screenshots and offer a download link in a single page. "
-meta-description: ""
 
 features:
   - Simple - download/clone, change config and push to launch your own landing page.

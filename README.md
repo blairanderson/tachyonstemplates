@@ -4,9 +4,10 @@ A library of open source, free to download, HTML starter templates using [Tachyo
 
 ## Current Templates and Themes
 
-There are currently 2 themes and templates available created by [Tachyons Templates](http://www.tachyonstemplates.com/):
+There are currently 3 themes and templates available created by [Tachyons Templates](http://www.tachyonstemplates.com/):
 
 - [**Launchr**](http://www.tachyonstemplates.com/template-overviews/tachyons-launchr/) - A one page web app launch site.
+- [**Consultant**](http://www.tachyonstemplates.com/template-overviews/tachyons-consultant/) - One page consultant site.
 - [**TachyonsTemplates**](http://www.tachyonstemplates.com/template-overviews/tachyons/) - A one page web app launch site.
 
 
