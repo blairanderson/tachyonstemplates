@@ -10,9 +10,7 @@
 
 		{{ content }}
 
-		<!-- {% include footer.html %} -->
-
-		{% include javascript.html %}
+		{% if jekyll.environment == "production" %}{% include analytics.html %}{% endif %}
 
 	</body>
 
