@@ -37,6 +37,9 @@ collections:
   templates:
     output: true
     permalink: /template-overviews/:title/
+  template-categories:
+    output: true
+    permalink: /template-categories/:title/
 
 # Pagination
 paginate: 5

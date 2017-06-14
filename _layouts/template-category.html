@@ -19,7 +19,9 @@ layout: default
 
 <div class="cf pt4 pb2 mw8 center">
 	{% for template in site.templates reversed %}
-		{% include template-card.html template=template %}
+    {% if template.categories contains page.slug or page.slug == 'all' %}
+		  {% include template-card.html template=template %}
+    {% endif %}
 	{% endfor %}
 </div>
 

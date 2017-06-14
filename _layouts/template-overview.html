@@ -40,6 +40,22 @@ layout: default
 				  {% endfor %}
 			  </div>
 			</div>
+      <div class="">
+        <h2 class="f2">Categories Listed in:</h2>
+        <ul>
+          {% for cat in site.template-categories %}
+            {% if page.categories contains cat.slug %}
+            <li>
+              <a
+                href="{{cat.url}}?from={{page.slug}}"
+                class="f3 pa2 dim lh-title">{{cat.title}}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+
+        </ul>
+
+      </div>
 			{% include disqus.html %}
 		</div>
 		<div class="fl w-100 w-40-ns">
