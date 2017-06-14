@@ -6,7 +6,7 @@
     <meta name="author" content="{{site.author}}">
     {% if site.bing_site_verification %}<meta name="msvalidate.01" content="{{site.bing_site_verification}}" />{% endif %}
     {% if site.google_site_verification %}<meta name="google-site-verification" content="{{site.google_site_verification}}">{% endif %}
-    <title>{% if page.meta-title == "Tachyons Templates" %}{{ page.meta-title }} - Free Tachyons Themes and Templates {% else %} {{ page.meta-title }} - Tachyons Templates {% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} - Tachyons Templates and Themes{% else %}{{site.title}}{% endif %}</title>
     <!-- Google+ Authorship -->
     <link rel="author" href="https://plus.google.com/+tachyonstemplates">
     <link rel="publisher" href="https://plus.google.com/+tachyonstemplates">
