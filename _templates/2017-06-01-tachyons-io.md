@@ -1,7 +1,7 @@
 ---
 title:			"Tachyons.io"
-slug:			   tachyonsio
-src:			   /template-overviews/tachyonsio
+slug:			   tachyons-io
+src:			   /template-overviews/tachyons-io
 background:  rgb(255,255,255)
 color:       rgb(0,0,0)
 categories:		open-source popular made-with-tachyons
