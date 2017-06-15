@@ -1,0 +1,35 @@
+{
+  "sites": [{
+      "title": "Github Pages",
+      "pricing_url": "https://pages.github.com/",
+      "free": "Unlimited Sites",
+      "basic": "Unlimited Sites",
+    },{
+      "title": "Forge",
+      "pricing_url": "https://getforge.com/pricing",
+      "free": "1 Site",
+      "basic": "$1/month/site",
+      "premium": "$100/month/unlimited"
+    },{
+      "title": "Amazon S3",
+      "pricing_url": "super confusing",
+      "free": "none",
+      "basic": "none",
+      "premium": "none"
+    },
+    {
+      "title": "Netlify",
+      "pricing_url": "https://www.netlify.com/pricing/",
+      "free": "Unlimited Sites with Custom Domains",
+      "basic": "$9/month/site",
+      "premium": "$49/month/site"
+    },
+    {
+      "title": "BitBallon",
+      "pricing_url": "https://www.bitballoon.com/pricing",
+      "free": "Unlimited Sites Without Custom Domains",
+      "basic": "$5/month/site",
+      "premium": "$hidden$"
+    },
+  ]
+}
