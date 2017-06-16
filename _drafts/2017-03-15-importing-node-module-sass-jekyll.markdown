@@ -1,9 +1,11 @@
 ---
 layout:			post
 title:			"Importing SCSS files from Node Modules using Jekyll"
-date:			2017-03-15
-category:		News
-description:	"Stop copying files from github into your project and import them correctly. "
+redirect_to:
+  - http://www.medium.com/someaewsomearticle
+date:			
+category:	News
+description:	"Stop copying files from github into your project and import them correctly."
 tags:			update
 meta-title:		"Import SCSS files from node_modules using Jekyll"
 
