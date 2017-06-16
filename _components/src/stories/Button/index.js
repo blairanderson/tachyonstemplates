@@ -2,10 +2,8 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { linkTo } from '@storybook/addon-links';
 import BasicPreviousNext from './BasicPreviousNext';
 
 storiesOf('Button').addWithInfo('Basic Previous Next', BasicPreviousNext, {
-  inline: true,
-  header: false
+  inline: true
 });
