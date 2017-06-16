@@ -1,6 +1,8 @@
 ---
 title:			"Tachyons Consultr"
 slug:			   tachyons-consultr
+redirect_from:
+  - /template-overviews/tachyons-consultant/
 layout:			template-overview
 src:			   /template-overviews/tachyons-consultr
 background:  "#357edd"

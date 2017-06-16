@@ -1,7 +1,7 @@
 ---
 layout:			post
 title:			"Introducing Tachyons Templates!"
-date:			2017-03-15
+date:			  2017-03-15
 category:		News
 description:	"Welcome! Thank you for visiting Tachyons Templates!"
 tags:			update

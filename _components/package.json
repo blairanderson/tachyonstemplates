@@ -23,6 +23,6 @@
     "deploy": "rm -rf ../tachyons-components/static && cp -fR ./build/* ../tachyons-components && echo \"---\nlayout: null\n---\n$(cat ../tachyons-components/index.html)\" > ../tachyons-components/index.html",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public -o ../components",
-    "deploy-storybook": "npm run build-storybook && echo \"---\nlayout: null\n---\n$(cat ../components/index.html)\" > ../components/index.html && sed -i '' -e 's/Storybook/Tachyons Component Playground/g' ../components/index.html"
+    "deploy-storybook": "npm run build-storybook && echo \"---\nlayout: null\n---\n$(cat ../components/index.html)\" > ../components/index.html && echo \"---\nlayout: null\nsitemap: false\n---\n$(cat ../components/iframe.html)\" > ../components/iframe.html && sed -i '' -e 's/Storybook/Tachyons Component Playground/g' ../components/index.html"
   }
 }
