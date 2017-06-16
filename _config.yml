@@ -10,7 +10,12 @@ bing_site_verification: "0C81C6A5BD3BAF86F4730D8C4A9BF223"
 baseurl:          ""
 
 # Build settings
-exclude:          [node_modules, sass-cache, _data]
+exclude:          [
+  node_modules, 
+  sass-cache,
+  _data,
+  _tachyons-components,
+]
 
 # Dependencies
 markdown:         kramdown

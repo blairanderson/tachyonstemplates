@@ -1,0 +1,21 @@
+{
+  "name": "tachyons-components",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "homepage": "/tachyons-components/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "rm -rf ../tachyons-components/static && cp -fR ./build/* ../tachyons-components && echo \"---\nlayout: null\n---\n$(cat ../tachyons-components/index.html)\" > ../tachyons-components/index.html"
+  }
+}
