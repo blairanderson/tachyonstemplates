@@ -2,6 +2,8 @@
 title: "Tachyons Templates"
 slug: tachyons-templates
 src:	/template-overviews/tachyons-templates
+redirect_from:
+  - /template-overviews/2017-06-01-tachyons-templates/
 background:  rgb(90,128,245)
 color:       rgb(255,255,255)
 categories:		open-source featured popular
