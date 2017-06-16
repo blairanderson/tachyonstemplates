@@ -5,8 +5,8 @@ import infoAddon from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 
 setOptions({
-  name: 'Tachyons Components',
-  url: 'http://www.tachyonstemplates.com/components/',
+  name: 'Tachyons Components Playground',
+  url: '//www.tachyonstemplates.com/components/',
   goFullScreen: false,
   showLeftPanel: true,
   showDownPanel: false,

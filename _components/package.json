@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "component-playground": "^2.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
@@ -14,7 +13,7 @@
     "react-scripts": "1.0.7",
     "tachyons": "^4.7.0"
   },
-  "homepage": "/tachyons-components/",
+  "homepage": "/components/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -23,9 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "rm -rf ../tachyons-components/static && cp -fR ./build/* ../tachyons-components && echo \"---\nlayout: null\n---\n$(cat ../tachyons-components/index.html)\" > ../tachyons-components/index.html",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "clean-storybook": "rm -rf ../components/",
-    "build-to-dist": "cp -fR ./storybook-static/* ../components && echo \"---\nlayout: null\n---\n$(cat ../components/index.html)\" > ../tachyons-components/index.html",
-    "deploy-storybook": "npm run build-storybook && npm run clean-storybook && npm run build-to-dist"
+    "build-storybook": "build-storybook -s public -o ../components",
+    "deploy-storybook": "npm run build-storybook && echo \"---\nlayout: null\n---\n$(cat ../components/index.html)\" > ../components/index.html"
   }
 }

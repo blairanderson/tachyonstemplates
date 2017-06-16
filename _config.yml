@@ -11,10 +11,10 @@ baseurl:          ""
 
 # Build settings
 exclude:          [
-  node_modules, 
+  node_modules,
   sass-cache,
   _data,
-  _tachyons-components,
+  _components,
 ]
 
 # Dependencies
