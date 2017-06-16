@@ -9,3 +9,4 @@ import 'tachyons/css/tachyons.css';
 // components!
 import Button from './Button';
 import Navigation from './Navigation';
+import Collections from './Collections';
