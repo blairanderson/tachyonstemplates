@@ -6,5 +6,6 @@ import { linkTo } from '@storybook/addon-links';
 import BasicPreviousNext from './BasicPreviousNext';
 
 storiesOf('Button').addWithInfo('Basic Previous Next', BasicPreviousNext, {
-  inline: true
+  inline: true,
+  header: false
 });

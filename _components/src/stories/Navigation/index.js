@@ -8,8 +8,10 @@ import FixedSemiTransparent from './FixedSemiTransparent';
 
 storiesOf('Navigation')
   .addWithInfo('Fixed Left Right', FixedLeftRight, {
-    inline: true
+    inline: true,
+    header: false
   })
   .addWithInfo('Fixed Semi Transparent', FixedSemiTransparent, {
-    inline: true
+    inline: true,
+    header: false
   });
