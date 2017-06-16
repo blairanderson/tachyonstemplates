@@ -25,7 +25,7 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "clean-storybook": "rm -rf ../components/",
-    "copy-storybook": "cp -fR ./storybook-static/* ../components && echo \"---\nlayout: null\n---\n$(cat ../components/index.html)\" > ../tachyons-components/index.html",
-    "deploy-storybook": "npm run build-storybook && npm run clean-storybook && npm run copy-storybook"
+    "build-to-dist": "cp -fR ./storybook-static/* ../components && echo \"---\nlayout: null\n---\n$(cat ../components/index.html)\" > ../tachyons-components/index.html",
+    "deploy-storybook": "npm run build-storybook && npm run clean-storybook && npm run build-to-dist"
   }
 }
