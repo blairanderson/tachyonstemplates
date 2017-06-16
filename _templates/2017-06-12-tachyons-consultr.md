@@ -1,14 +1,14 @@
 ---
-title:			"Tachyons Consultant"
-slug:			   tachyons-consultant
+title:			"Tachyons Consultr"
+slug:			   tachyons-consultr
 layout:			template-overview
-src:			   /template-overviews/tachyons-consultant
+src:			   /template-overviews/tachyons-consultr
 background:  "#357edd"
 color:       "#f4f4f4"
 categories:		open-source featured
 description:	"Consulting Company Marketing Site"
-img-src:		"https://rawgit.com/blairanderson/tachyons-consultant/master/screenshot.png"
-img-desc:		"Tachyons Consultant Marketing Site"
+img-src:		  "https://rawgit.com/blairanderson/tachyons-consultant/master/screenshot.png"
+img-desc:		 "Tachyons Consultant Marketing Site"
 external-links:
   preview:
     title: "Live Preview"
@@ -30,5 +30,5 @@ features:
   - Home Header background image is courtesy of DeathToStockPhoto. If you keep it, you must attribute them.
 
 long-description: > #
-  Tachyons Creative Consultant was built to display your consulting company marketing services, a few images(one for each service provided), and a contact section for phone/email. All linked in a single page.
+  Tachyons Consultr was built to display your consulting company marketing services, a few images(one for each service provided), and a contact section for phone/email. All linked in a single page.
 ---
