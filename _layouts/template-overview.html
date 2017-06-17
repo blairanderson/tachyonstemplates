@@ -13,7 +13,7 @@ layout: default
 <div class="db mw8 ph4 pv3 mv4 bg-black-10 br2 center">
   <a href="/">Tachyons Templates</a>
   /
-  <a href="/template-categories/all/">All Templates & Themes</a>
+  <a href="/template-categories/all-templates/">All Templates & Themes</a>
   /
   <a href="{{page.url}}">{{ page.title }}</a>
 </div>
@@ -46,7 +46,7 @@ layout: default
           {% for cat in site.template-categories %}
             {% if page.categories contains cat.slug %}
             <li>
-              <a
+              {{page.slug}} - <a
                 href="{{cat.url}}?from={{page.slug}}"
                 class="f3 pa2 dim lh-title">{{cat.title}}</a>
             </li>
@@ -87,29 +87,10 @@ layout: default
 
 <hr class="mw8 center">
 <h4 class="tc f2">See More Templates!</h4>
-<section class="cf pt4 pb2 mw8 center">
+<section class="cf pb2 mw8 center">
   {% for template in site.templates reversed %}
     {% if template.categories contains 'featured' and template.path != page.path %}
-      <div class="link fl w-50 w-third-ns pa3 pa4-ns">
-        <div class="br2 ba dark-gray tc b--black-10">
-          <div class="aspect-ratio aspect-ratio--16x9">
-            <a class="aspect-ratio--object db overflow-hidden" href="{{ template.src }}">
-              <div class="aspect-ratio--object grow dim cover" style="background:url({{ template.img-src }}) center;"></div>
-            </a>
-          </div>
-          <div class="pv2 ph3-ns pb3-ns bg-black-05 text-center">
-            <div class="dt w-100 mt1-ns">
-              <div class="dtc">
-                <a class="link dim no-underline near-black hover-underline" href="{{ template.src }}">
-                  <h1 class="f5 f4-ns mv1 mv2-ns">
-                    {{ template.title }}
-                  </h1>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% include template-card.html template=template %}
     {% endif %}
   {% endfor %}
 </section>
