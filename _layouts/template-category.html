@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="tc ph3 ph4-l">
   <h1 class="f3 f2-m f-subheadline-l fw6 tc">
     {{ page.title }}
@@ -9,13 +8,11 @@ layout: default
   <p>{{ page.description }}</p>
 </div>
 
-<!-- Page Content -->
 <div class="db mw8 ph4 pv3 mv4 bg-black-10 br2 center">
   <a href="/">Tachyons Templates</a>
   /
   {{ page.title }}
 </div>
-
 
 <div class="cf pt4 pb2 mw8 center">
 	{% for template in site.templates reversed %}
@@ -27,4 +24,18 @@ layout: default
 
 <div class="cf w-100">
 	{{ content }}
+</div>
+
+<div class="measure center">
+<h2 class="f2 tc">Other Categories:</h2>
+{% for cat in site.template-categories %}
+  {% if page.path != cat.path %}
+    <dl class="f6 lh-title mv2">
+      <dt class="dib b">----></dt>
+      <dd class="dib ml0 gray"><a
+       href="{{cat.url}}?from={{page.slug}}"
+       class="dark-blue dim">{{cat.title}}</a></dd>
+    </dl>
+  {% endif %}
+{% endfor %}
 </div>

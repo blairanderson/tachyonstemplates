@@ -1,6 +1,6 @@
 # Site Information
 license:          "MIT"
-license-url:      "https://github.com/blairanderson/tachyonstemplates/blob/gh-pages/LICENSE"
+license-url:      "https://github.com/blairanderson/tachyonstemplates/blob/master/LICENSE"
 author:           "Tachyons Templates"
 title: Free Tachyons Themes and Templates
 google-analytics: "UA-61052500-15"
@@ -8,7 +8,6 @@ google_site_verification: false
 bing_site_verification: "0C81C6A5BD3BAF86F4730D8C4A9BF223"
 # Site Settings
 baseurl:          ""
-
 # Build settings
 exclude:          [
   node_modules,
@@ -16,20 +15,19 @@ exclude:          [
   _data,
   _components,
 ]
-
+whitelist:
+  - jekyll-redirect-from
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge
-
 # Permalinks
 permalink:        pretty
-
 # Server
 url:              http://www.tachyonstemplates.com
 enforce_ssl:      false
 encoding:         UTF-8
-host:             0.0.0.0
-port:             4000
+host:             127.0.0.1/
+port:             9001
 
 # Gems
 gems:
