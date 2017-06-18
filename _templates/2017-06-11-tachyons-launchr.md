@@ -8,6 +8,7 @@ color:       rgb(255,255,255)
 categories:		open-source featured popular
 description:	"Mobile App Launch Site"
 img-src:		"https://rawgit.com/blairanderson/tachyons-launchr/master/screenshot.png"
+img-src-tiny:		"https://rawgit.com/blairanderson/tachyons-launchr/master/screenshot-tiny.png"
 img-desc:		"Tachyons Launchr Landing Page"
 external-links:
   preview:

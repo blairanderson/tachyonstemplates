@@ -9,6 +9,7 @@ color:       rgb(255,255,255)
 categories:		open-source featured popular
 description:	"Fast, Responsive Portfolio site"
 img-src:		/img/templates/tachyons-templates.png
+img-src-tiny:		/img/templates/tachyons-templates-tiny.png
 img-desc:		"Tachyons Templates landing"
 external-links:
   preview:

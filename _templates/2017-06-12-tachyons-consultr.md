@@ -10,7 +10,8 @@ color:       "#f4f4f4"
 categories:		open-source featured
 description:	"Consulting Company Marketing Site"
 img-src:		  "https://rawgit.com/blairanderson/tachyons-consultant/master/screenshot.png"
-img-desc:		 "Tachyons Consultant Marketing Site"
+img-src-tiny: "https://rawgit.com/blairanderson/tachyons-consultant/master/screenshot-tiny.png"
+img-desc:		  "Tachyons Consultant Marketing Site"
 external-links:
   preview:
     title: "Live Preview"

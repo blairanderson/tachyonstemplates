@@ -7,6 +7,7 @@ color:       rgb(0,0,0)
 categories:		open-source popular made-with-tachyons
 description:	"the actual tachyons.io site is an open source template theme"
 img-src:		/img/templates/tachyons.png
+img-src-tiny:		/img/templates/tachyons-tiny.png
 img-desc:		"tachyons landing page"
 external-links:
   preview:
