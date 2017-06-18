@@ -4,11 +4,11 @@ A library of open source, free to download, HTML starter templates using [Tachyo
 
 ## Current Templates and Themes
 
-There are currently 3 themes and templates available created by [Tachyons Templates](http://www.tachyonstemplates.com/):
+There are currently 3 themes and templates available created by [Tachyons Templates](https://www.tachyonstemplates.com/):
 
-- [**Launchr**](http://www.tachyonstemplates.com/template-overviews/tachyons-launchr/) - A one page web app launch site.
-- [**Consultant**](http://www.tachyonstemplates.com/template-overviews/tachyons-consultant/) - One page consultant site.
-- [**TachyonsTemplates**](http://www.tachyonstemplates.com/template-overviews/tachyons/) - A one page web app launch site.
+- [**Launchr**](https://www.tachyonstemplates.com/template-overviews/tachyons-launchr/?from=github) - A one page web app launch site.
+- [**Consultr**](https://www.tachyonstemplates.com/template-overviews/tachyons-consultr/?from=github) - One page consultant company site.
+- [**TachyonsTemplates**](https://www.tachyonstemplates.com/template-overviews/tachyons-templates/?from=github) - This Portfolio Site!
 
 
 ## How to Launch a Template
@@ -20,4 +20,4 @@ There are currently 3 themes and templates available created by [Tachyons Templa
 
 ## Copyright and License
 
-Code and documentation copyright [Tachyons Templates LLC](http://tachyonstemplates.com/). Code released under the MIT license. Docs released under Creative Commons.
+Code and documentation copyright [Tachyons Templates LLC](https://tachyonstemplates.com/). Code released under the MIT license. Docs released under Creative Commons.
