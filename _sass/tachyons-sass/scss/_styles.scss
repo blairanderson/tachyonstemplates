@@ -13,3 +13,20 @@
 
 */
 
+
+blockquote {
+  @extend .athelas !optional;
+  @extend .ml0 !optional;
+  @extend .mt0 !optional;
+  @extend .pl4 !optional;
+  @extend .black-90 !optional;
+  @extend .bl !optional;
+  @extend .bw2 !optional;
+  @extend .b--blue !optional;
+}
+
+
+// code {
+//   @extend .bg-black-10 !optional;
+//   @extend .br2 !optional;
+// }

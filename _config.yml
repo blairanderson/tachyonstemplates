@@ -47,4 +47,5 @@ collections:
 
 # Pagination
 paginate: 5
+permalink: /:year/:title/
 paginate_path: "/articles/page:num/"
