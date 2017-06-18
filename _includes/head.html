@@ -4,14 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ page.meta-description }}">
     <meta name="author" content="{{site.author}}">
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="en_US" />
     {% if site.bing_site_verification %}<meta name="msvalidate.01" content="{{site.bing_site_verification}}" />{% endif %}
     {% if site.google_site_verification %}<meta name="google-site-verification" content="{{site.google_site_verification}}">{% endif %}
     <title>{% if page.title %}{{ page.title }} - Tachyons Templates and Themes{% else %}{{site.title}}{% endif %}</title>
     <!-- Google+ Authorship -->
     <link rel="author" href="https://plus.google.com/+tachyonstemplates">
     <link rel="publisher" href="https://plus.google.com/+tachyonstemplates">
-    <!-- Canonical -->
-    <link rel="canonical" href="https://tachyonstemplates.com{{ page.url }}">
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Libre+Franklin:400,100,100italic,200,200italic,300,300italic,400italic,500,600,500italic,600italic,700,700italic,800,900,800italic,900italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'>
@@ -31,5 +31,8 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="{{ page.meta-description }}">
     <meta property="og:image" content="/img/favicons/logo.png">
-    <meta property="og:url" content="https://tachyonstemplates.com{{ page.url }}">
+    <!-- Canonical -->
+    <link rel="canonical" href="{{site.url}}{{ page.url }}">
+    <meta property="og:url" content="{{site.url}}{{ page.url }}">
+
 </head>

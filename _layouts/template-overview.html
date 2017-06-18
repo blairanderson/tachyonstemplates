@@ -13,8 +13,14 @@ layout: default
 <div class="db mw8 ph4 pv3 mv4 bg-black-10 br2 center">
   <a href="/">Tachyons Templates</a>
   /
-  <a href="/template-categories/all-templates/">All Templates & Themes</a>
+  <a href="/template-categories/all-templates/?from={{page.slug}}">All Templates</a>
   /
+  {% for cat in site.template-categories %}
+    {% if page.categories contains cat.slug %}
+      <a href="{{cat.url}}?from={{page.slug}}">{{cat.title}}</a>
+      /
+    {% endif %}
+  {% endfor %}
   <a href="{{page.url}}">{{ page.title }}</a>
 </div>
 
@@ -40,19 +46,6 @@ layout: default
 				  {% endfor %}
 			  </div>
 			</div>
-      <div class="">
-        <h2 class="f2">Categories Listed in:</h2>
-        {% for cat in site.template-categories %}
-          {% if page.categories contains cat.slug %}
-            <dl class="f6 lh-title mv2">
-              <dt class="dib b">----></dt>
-              <dd class="dib ml0 gray"><a
-               href="{{cat.url}}?from={{page.slug}}"
-               class="dark-blue dim">{{cat.title}}</a></dd>
-            </dl>
-          {% endif %}
-        {% endfor %}
-      </div>
 			{% include disqus.html %}
 		</div>
 		<div class="fl w-100 w-40-ns">
