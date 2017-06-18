@@ -9,7 +9,7 @@ meta-title:		"Introducing Tachyons Templates"
 
 author:			"Blair Anderson"
 author-slug:	blair-anderson
-author-desc:	"Blair Anderson is the creator of Tachyons Templates and owner of Tachyons Templates. He is a Full Stack web designer and developer working out of sunny Orlando, Florida."
+author-desc:	"Blair Anderson is the creator of Tachyons Templates and owner of Tachyons Templates. He is a Full Stack web designer and developer from Seattle."
 author-url:		http://blairanderson.co
 author-twitter:	blairanderson
 author-github:	blairanderson

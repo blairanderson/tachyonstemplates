@@ -3,7 +3,6 @@ var gulp = require('gulp');
 var data = require('gulp-data');
 var fs = require('fs')
 var request = require('request');
-var async = require('async')
 
 // Copy Tachyons core files from node_modules to vendor directory
 gulp.task('default', ['tachyons-core', 'tachyons-main']);
