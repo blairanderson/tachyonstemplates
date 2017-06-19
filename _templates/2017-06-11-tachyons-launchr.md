@@ -16,7 +16,7 @@ external-links:
     href: "http://www.blairanderson.co/tachyons-launchr/"
   download:
     title: "Download"
-    href: "https://github.com/blairanderson/tachyons-launchr/releases/tag/1.0"
+    href: "https://github.com/blairanderson/tachyons-launchr/archive/master.zip"
   source:
     title: "View Source"
     href: "https://github.com/blairanderson/tachyons-launchr/"

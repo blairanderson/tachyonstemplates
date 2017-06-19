@@ -18,7 +18,7 @@ external-links:
     href: "http://www.blairanderson.co/tachyons-consultant/"
   download:
     title: "Download"
-    href: "https://github.com/blairanderson/tachyons-consultant/releases/tag/1.0"
+    href: "https://github.com/blairanderson/tachyons-consultant/archive/master.zip"
   source:
     title: "View Source"
     href: "https://github.com/blairanderson/tachyons-consultant/"
