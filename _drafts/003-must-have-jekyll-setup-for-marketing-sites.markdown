@@ -2,20 +2,11 @@
 layout:			post
 title:			"5 Minimum Viable Jekyll ProTips for launching a Site"
 date:			  2017-06-14
-category:		News
 description: "Every marketing site should have these things in place to make your life easier."
-tags:			  update
-
+meta-title:	"5 Must-Have Jekyll setup for your blog or marketing site"
+author:	blair
 redirect_from:
   - /posts/test-jekyll-redirect-from/
-meta-title:	"5 Must-Have Jekyll setup for your blog or marketing site"
-
-author:			"Blair Anderson"
-author-slug:	blair-anderson
-author-desc:	"Blair Anderson is the creator of Tachyons Templates and owner of Tachyons Templates. He is a Full Stack web designer and developer from Seattle."
-author-url:		http://blairanderson.co
-author-twitter:	blairanderson
-author-github:	blairanderson
 ---
 
 I have always been a huge fan of jekyll because the Total Cost of Ownership is basically zero.  More recently, I have been building with a focus on marketing and analytics. Below is a built up list of starters and necessary setup that I consider to be part of launching your MVP site.

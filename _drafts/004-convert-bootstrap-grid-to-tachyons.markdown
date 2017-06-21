@@ -5,12 +5,7 @@ date:		 	   2017-06-15
 description:	"Convert your Bootstrap Grid to Tachyons"
 tags:			    update
 meta-title:		"Convert your Bootstrap Grid to Tachyons"
-author:			"Blair Anderson"
-author-slug:	blair-anderson
-author-desc:	"Blair Anderson is the creator of Tachyons Templates"
-author-url:		http://www.tachyonstemplates.com
-author-twitter:	blairanderson
-author-github:	blairanderson
+author:	blair
 ---
 
 {:.fake-h2}

@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */
 
 import { configure, setAddon } from '@storybook/react';
-import infoAddon from '@storybook/addon-info';
+import infoAddon, { setDefaults } from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 
 setOptions({
@@ -13,6 +13,15 @@ setOptions({
   showSearchBox: false,
   downPanelInRight: false,
   sortStoriesByKind: true
+});
+
+// addon-info
+setDefaults({
+  inline: true,
+  maxPropsIntoLine: 1,
+  maxPropObjectKeys: 10,
+  maxPropArrayLength: 10,
+  maxPropStringLength: 150
 });
 
 setAddon(infoAddon);

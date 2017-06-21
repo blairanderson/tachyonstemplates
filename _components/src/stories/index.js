@@ -10,3 +10,4 @@ import 'tachyons/css/tachyons.css';
 import Button from './Button';
 import Navigation from './Navigation';
 import Collections from './Collections';
+import Pagination from './Pagination';

@@ -3,14 +3,8 @@ layout:			post
 title:			"Add create-react-app to Jekyll and Github Pages"
 date:		 	   2017-06-15
 description:	"Deploy a marketing site with a react app, using jekyll and github pages"
-tags:			    update
 meta-title:		"create-react-app  with Jekyll on Github Pages"
-author:			"Blair Anderson"
-author-slug:	blair-anderson
-author-desc:	"Blair Anderson is the creator of Tachyons Templates and owner of Tachyons Templates."
-author-url:		http://www.tachyonstemplates.com
-author-twitter:	blairanderson
-author-github:	blairanderson
+author:	blair
 ---
 
 I love using Jekyll and React to build things.
