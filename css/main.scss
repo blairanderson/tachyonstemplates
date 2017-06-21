@@ -26,7 +26,7 @@ $brand-google-plus:			#dd4b39;
 //IMPORT TACHYONS YOLO
 @import "tachyons-sass/tachyons";
 
-figure.highlight {
+div.highlight, figure.highlight {
   margin: 0 !important;
-  overflow: scroll;
+  overflow-y: scroll;
 }
