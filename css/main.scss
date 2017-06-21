@@ -25,3 +25,8 @@ $brand-google-plus:			#dd4b39;
 
 //IMPORT TACHYONS YOLO
 @import "tachyons-sass/tachyons";
+
+figure.highlight {
+  margin: 0 !important;
+  overflow: scroll;
+}
