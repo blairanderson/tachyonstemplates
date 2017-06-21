@@ -1,0 +1,27 @@
+{% assign post_limit = site.template-categories.size %}
+
+<section class="pa3 pa5-ns cf w-100">
+<div class="fl tc w-100 w-50-ns">
+<h2 class="f4 bold tc"><a class="link near-black" href="/articles/">Blog Posts</a></h2>
+<ul class="list">
+{% for post in site.posts offset: 0 limit: post_limit  %}
+{% if post.path != page.path %}
+<li class="pa2"><a class="dark-blue dim" href="{% include href.html url=post.url %}">{{ post.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
+
+</div>
+<div class="fl tc w-100 w-50-ns">
+<h2 class="f4 bold tc">Template Categories</h2>
+<ul class="list pl0 tc ml0 center mw6 br2">
+{% for cat in site.template-categories %}
+{% if cat.path != page.path %}
+<li class="pa2">
+<a href="{% include href.html url=cat.url %}" class="dark-blue dim">{{cat.title}}</a>
+</li>
+{% endif %}
+{% endfor %}
+</ul>
+</div>
+</section>

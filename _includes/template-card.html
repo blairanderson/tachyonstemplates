@@ -1,14 +1,15 @@
 <div class="link w-75 center fl-ns w-third-ns pa3 pa4-ns">
   <div class="br2 ba dark-gray tc b--black-10">
     <div class="aspect-ratio aspect-ratio--16x9">
-      <a class="aspect-ratio--object db overflow-hidden" href="{{ template.url }}?from={{page.slug}}">
+      <a class="aspect-ratio--object db overflow-hidden" href="{% include href.html url=template.url %}">
         <div class="aspect-ratio--object grow dim cover" style="background:url({{ template.img-src-tiny }}) center;"></div>
       </a>
+
     </div>
     <div class="pv2 ph3-ns pb3-ns bg-black-05 text-center">
       <div class="dt w-100 mt1-ns">
         <div class="dtc">
-          <a class="link dim no-underline near-black hover-underline" href="{{ template.url }}?from={{page.slug}}">
+          <a class="link dim no-underline near-black hover-underline" href="{% include href.html url=template.url %}">
             <h1 class="f5 f4-ns mv1 mv2-ns">{{ template.title }}</h1>
           </a>
         </div>

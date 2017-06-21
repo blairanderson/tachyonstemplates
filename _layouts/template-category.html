@@ -24,16 +24,6 @@ layout: default
 	{{ content }}
 </div>
 
-<div class="measure center">
-<h2 class="f2 tc">Other Categories:</h2>
-{% for cat in site.template-categories %}
-  {% if page.path != cat.path %}
-    <dl class="f6 lh-title mv2">
-      <dt class="dib b">----></dt>
-      <dd class="dib ml0 gray"><a
-       href="{{cat.url}}?from={{page.slug}}"
-       class="dark-blue dim">{{cat.title}}</a></dd>
-    </dl>
-  {% endif %}
-{% endfor %}
-</div>
+<hr>
+
+{% include latest-posts.html %}

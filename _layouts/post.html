@@ -7,31 +7,22 @@ layout: default
 <link rel="stylesheet" href="https://rawgit.com/richleland/pygments-css/master/default.css">
 <article class="mw7 ph3 pv2 center" itemscope itemtype="https://schema.org/BlogPosting">
 	<header>
+		<h1 itemprop="name headline" class="f2 tc lh-title sans-serif fw9 mb3 mt0 pt3 bt bw2">{{ page.title }}</h1>
+  </header>
+  <div class="post-body" itemprop="articleBody">
+		{{ content }}
+	</div>
+	<footer>
 		<div class="author black-50">
 			<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ author.name }}</span></span>
 		</div>
 		<time class="f6 ttu tracked gray" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-		<h1 itemprop="name headline" class="f2 tc lh-title sans-serif fw9 mb3 mt0 pt3 bt bw2">{{ page.title }}</h1>
-  </header>
-  <div class="f5 lh-copy measure-wide center" itemprop="articleBody">{{ content }}</div>
+	</footer>
 </article>
 
 <div class="cf bt b--light-blue ph3">
-	<div class="fl tc w-100 w-third-ns br b--light-blue">
-		<h3 class="mb3 tc">-Latest Posts-</h3>
-		<ul class="list">
-			{% for post in site.posts offset: 0 limit: 5  %}
-			{% if post.path != page.path %}
-				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-			{% endif %}
-			{% endfor %}
-		</ul>
-		<small class="tc"><a href="/articles">All Posts</a></small>
-	</div>
-	<div class="fl w-100 w-third-ns pa2">
-		{% include disqus.html %}
-	</div>
-	<div class="fl w-100 w-third-ns pa2 bl b--light-blue">
+	<div class="fl w-100 w-50-ns pa2">{% include disqus.html %}</div>
+	<div class="fl w-100 w-50-ns pa2 ">
 		{% if author.desc %}
 			<p>{{ author.desc }}</p>
 		{% endif  %}
@@ -51,11 +42,4 @@ layout: default
 
 <hr>
 
-<section class="pa3 pa5-ns">
-  <h1 class="f4 bold tc">Template Categories</h1>
-  <ul class="list pl0 tc ml0 center mw6 ba b--light-silver br2">
-{% for cat in site.template-categories %}<li class="ph3 pv3 bb b--light-silver">
-<a href="{{cat.url}}?from={{page.slug}}" class="dark-blue dim">{{cat.title}}</a>
-</li>{% endfor %}
-  </ul>
-</section>
+{% include latest-posts.html %}

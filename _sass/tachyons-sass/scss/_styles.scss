@@ -26,7 +26,19 @@ blockquote {
 }
 
 
-// code {
-//   @extend .bg-black-10 !optional;
-//   @extend .br2 !optional;
-// }
+
+.post-body {
+  .highlight {
+    @extend .ma0 !optional;
+    overflow-y: scroll;
+  }
+
+  p {
+    @extend .f5 !optional;
+  }
+
+  h1, h2, h3,h4,h5,h6, p {
+    @extend .center !optional;
+    @extend .mw6 !optional;
+  }
+}
