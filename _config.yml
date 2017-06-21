@@ -19,7 +19,10 @@ whitelist:
   - jekyll-redirect-from
 # Dependencies
 markdown:         kramdown
-highlighter:      rouge
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+# highlighter:      rouge
 # Permalinks
 permalink:        pretty
 # Server
