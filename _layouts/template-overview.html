@@ -31,14 +31,14 @@ layout: default
 				<a
 					rel="nofollow noopener"
 					target="_blank"
-					onclick="ga('send', 'event', 'external-links', 'Preview', '{{page.title}}');"
+					onclick="ga('send', 'event', 'external-links', 'preview', '{{page.title}}');"
 					href="{{ page.external-links.preview.href }}">
 					<img class="" src="{{ page.img-src }}" alt="{{ page.img-desc }}">
 				</a>
 				<div class="cf">
 					{% for link in page.external-links %}
 						<a
-						href={{link[1].href}}
+						href="{{link[1].href}}"
 						target="_blank"
 						onclick="ga('send', 'event', 'external-links', '{{link[0]}}', '{{page.title}}');"
 						rel="nofollow noopener"
