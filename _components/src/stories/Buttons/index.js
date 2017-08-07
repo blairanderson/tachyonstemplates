@@ -2,8 +2,9 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import Basic from './Basic';
 import BasicPreviousNext from './BasicPreviousNext';
 
-storiesOf('Button').addWithInfo('Basic Previous Next', BasicPreviousNext, {
-  inline: true
-});
+storiesOf('Button')
+  .addWithInfo('Basic', Basic, {inline: true}});
+  .addWithInfo('Basic Previous Next', BasicPreviousNext, {inline: true}});

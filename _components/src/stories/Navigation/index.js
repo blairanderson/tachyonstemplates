@@ -6,9 +6,7 @@ import FixedLeftRight from './FixedLeftRight';
 import FixedSemiTransparent from './FixedSemiTransparent';
 
 storiesOf('Navigation')
-  .addWithInfo('Fixed Left Right', FixedLeftRight, {
-    inline: true
-  })
+  .addWithInfo('Fixed Left Right', FixedLeftRight, { inline: true })
   .addWithInfo('Fixed Semi Transparent', FixedSemiTransparent, {
     inline: true
   });
