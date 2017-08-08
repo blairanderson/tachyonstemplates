@@ -11,7 +11,7 @@ import 'tachyons/css/tachyons.css';
 // 2. Run Prettier. fix errors. Run Prettier.
 
 import ArticleLists from './ArticleLists';
-// import Articles from './Articles';
+import Articles from './Articles';
 // import Avatars from './Avatars';
 // import Banners from './Banners';
 import Buttons from './Buttons';
