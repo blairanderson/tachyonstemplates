@@ -14,8 +14,13 @@ function readDirR(dir) {
     : dir;
 }
 
-const readir = 'Banners';
+const readir = 'Cards';
 const these_comps = {};
+console.log(
+  `/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */`
+);
+console.log(`import React from 'react';`);
+console.log(`import { storiesOf } from '@storybook/react';`);
 readDirR(dirname).forEach(function(filepath) {
   if (filepath.includes(readir) && !filepath.includes('index')) {
     const path_parts = filepath.split('/');
@@ -24,7 +29,7 @@ readDirR(dirname).forEach(function(filepath) {
     console.log(`import ${comp} from './${comp}.js'`);
   }
 });
-
+console.log('');
 console.log(`storiesOf('${readir}')`);
 Object.keys(these_comps).forEach(function(comp) {
   const title = titleize(comp);
