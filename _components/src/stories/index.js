@@ -31,5 +31,5 @@ import Navigation from './Navigation';
 import Pagination from './Pagination';
 // import Pages from './Pages';
 // import Quotes from './Quotes';
-// import Tables from './Tables';
-// import Text from './Text';
+import Tables from './Tables';
+import Text from './Text';
