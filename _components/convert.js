@@ -14,7 +14,7 @@ function readDirR(dir) {
     : dir;
 }
 
-const readir = 'Cards';
+const readir = 'Forms';
 const these_comps = {};
 console.log(
   `/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */`

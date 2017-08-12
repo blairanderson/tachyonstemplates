@@ -21,7 +21,7 @@ import Cards from './Cards';
 // import DefinitionLists from './DefinitionLists';
 // import ErrorPages from './ErrorPages';
 // import Footers from './Footers';
-// import Forms from './Forms';
+import Forms from './Forms';
 // import Headers from './Headers';
 // import Layout from './Layout';
 // import Links from './Links';
