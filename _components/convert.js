@@ -14,26 +14,41 @@ function readDirR(dir) {
     : dir;
 }
 
-const readir = 'Forms';
+// TODO watch out! this creates files!
+const readir = 'Nav';
+const FORCE_WRITE = false;
 const these_comps = {};
-console.log(
+function write(string) {
+  fs.appendFileSync(`${dirname}/${readir}/index.js`, string);
+  fs.appendFileSync(`${dirname}/${readir}/index.js`, '\n');
+}
+function log(string) {
+  console.log(string);
+  if (FORCE_WRITE) {
+    write(string);
+  }
+}
+
+log(
   `/* eslint-disable import/no-extraneous-dependencies, import/no-unresolved, import/extensions */`
 );
-console.log(`import React from 'react';`);
-console.log(`import { storiesOf } from '@storybook/react';`);
+log('');
+log(`import React from 'react';`);
+log(`import { storiesOf } from '@storybook/react';`);
 readDirR(dirname).forEach(function(filepath) {
-  if (filepath.includes(readir) && !filepath.includes('index')) {
-    const path_parts = filepath.split('/');
-    const comp = path_parts[path_parts.length - 1].split('.js')[0];
+  const path_parts = filepath.split('/');
+  const compdir = path_parts[path_parts.length - 2];
+  const comp = path_parts[path_parts.length - 1].split('.js')[0];
+  if (compdir === readir && !filepath.includes('index')) {
     these_comps[comp] = comp;
-    console.log(`import ${comp} from './${comp}.js'`);
+    log(`import ${comp} from './${comp}.js'`);
   }
 });
-console.log('');
-console.log(`storiesOf('${readir}')`);
+log('');
+log(`storiesOf('${readir}')`);
 Object.keys(these_comps).forEach(function(comp) {
   const title = titleize(comp);
-  console.log(`.addWithInfo('${title}', ${comp}, { inline: true })`);
+  log(`.addWithInfo('${title}', ${comp}, { inline: true })`);
 });
 
 function titleize(str) {

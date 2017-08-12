@@ -1,10 +1,10 @@
 <footer>
-  <div class="cover bg-left bg-center-l" style="background-image: url(/img/bg.png)">
+  <div class="cover bg-left bg-center-l pv4" style="background-image: url(/img/bg.png)">
     <form action="//tachyonstemplates.us16.list-manage.com/subscribe/post?u=3ff847fac68c99ba4cbf378be&amp;id=189a0e77be" method="post"
           id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
           class="center pa3" target="_blank" novalidate>
       <div>
-        <h3 class="pa0 f3 f2-ns mb3 white tc">Want more Tachyons Templates?</h3>
+        <h3 class="pa0 f3 f2-ns mb3 mt0 white tc">Want more Tachyons Templates?</h3>
         <h5 class="pa0 f4 f3-ns mb3 white tc">Subscribe to our mailing list to receive an update when new items arrive!</h5>
         <div class="cf mw7 center">
           <label class="clip" for="email-address">Email Address</label>
@@ -23,8 +23,9 @@
         </div>
       </div>
     </form>
-    <div class="pa6 tc">
-      {% assign sorted = (site.pages | sort: 'title' %}
-      {% for page in sorted %}{% if page.title %}<a class="near-white f4 ph4" href="{{page.url}}">{{page.title}}</a>{% endif %}{% endfor %}
-    </div>
+  </div>
+  <div class="pa6 tc">
+    {% assign sorted = (site.pages | sort: 'title' %}
+    {% for page in sorted %}{% if page.title %}<a class="near-black f4 ph4" href="{{page.url}}">{{page.title}}</a>{% endif %}{% endfor %}
+  </div>
 </footer>
