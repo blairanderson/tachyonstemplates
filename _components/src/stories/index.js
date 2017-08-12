@@ -13,7 +13,7 @@ import 'tachyons/css/tachyons.css';
 import ArticleLists from './ArticleLists';
 import Articles from './Articles';
 import Avatars from './Avatars';
-// import Banners from './Banners';
+import Banners from './Banners';
 import Buttons from './Buttons';
 // import Cards from './Cards';
 // import Collections from './Collections';

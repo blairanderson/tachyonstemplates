@@ -1,12 +1,10 @@
 // for each component directory
-const dirname = 'src/components';
+const dirname = 'src/stories';
 var path = require('path');
-var fs = require('fs');
-var _0777 = parseInt('0777', 8);
-
-const FileSystem = require('fs');
 const Path = require('path');
-const prependMe = "import React from 'react';\n  export default () =>";
+var fs = require('fs');
+const FileSystem = require('fs');
+var _0777 = parseInt('0777', 8);
 
 function readDirR(dir) {
   return FileSystem.statSync(dir).isDirectory()
@@ -16,21 +14,21 @@ function readDirR(dir) {
     : dir;
 }
 
+const readir = 'Banners';
+const these_comps = {};
 readDirR(dirname).forEach(function(filepath) {
-  // src/components/headers/rounded-avatar-title-subtitle.html
-  var clean = filepath.split('components/')[1].split('.html')[0].split('/');
-  var folder = titleize(clean[0]).split('-').join('');
-  var filename = titleize(clean[1]).split('-').join('');
-  var newfilepath = `src/stories/${folder}/${filename}.js`;
-  var data = FileSystem.readFileSync(filepath, 'utf8')
-    .split('}}}')[1]
-    .replace(/class/g, 'className');
+  if (filepath.includes(readir) && !filepath.includes('index')) {
+    const path_parts = filepath.split('/');
+    const comp = path_parts[path_parts.length - 1].split('.js')[0];
+    these_comps[comp] = comp;
+    console.log(`import ${comp} from './${comp}.js'`);
+  }
+});
 
-  console.log(newfilepath);
-
-  mkdirP(`src/stories/${folder}/`, function(err) {
-    FileSystem.writeFileSync(newfilepath, prependMe + data);
-  });
+console.log(`storiesOf('${readir}')`);
+Object.keys(these_comps).forEach(function(comp) {
+  const title = titleize(comp);
+  console.log(`.addWithInfo('${title}', ${comp}, { inline: true })`);
 });
 
 function titleize(str) {
