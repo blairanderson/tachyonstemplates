@@ -85,23 +85,27 @@ storiesOf('Layout')
     FourColumnCollapseTwoCollapseOne,
     { inline: true }
   )
-  .addWithInfo('Fullbleed16x9', FullBleed16x9, { inline: true })
-  .addWithInfo('Fullbleed4x6', FullBleed4x6, { inline: true })
-  .addWithInfo('Fullbleed5x7', FullBleed5x7, { inline: true })
-  .addWithInfo('Fullbleed5x8', FullBleed5x8, { inline: true })
-  .addWithInfo('Fullbleed6x4', FullBleed6x4, { inline: true })
-  .addWithInfo('Fullbleed7x5', FullBleed7x5, { inline: true })
-  .addWithInfo('Fullbleed8x5', FullBleed8x5, { inline: true })
-  .addWithInfo('Fullbleed9x16', FullBleed9x16, { inline: true })
-  .addWithInfo('Fullbleedsquare', FullBleedSquare, { inline: true })
-  .addWithInfo('Fullscreencenteredtitle', FullScreenCenteredTitle, {
+  .addWithInfo('Fullbleed 16x9', FullBleed16x9, { inline: true })
+  .addWithInfo('Fullbleed 4x6', FullBleed4x6, { inline: true })
+  .addWithInfo('Fullbleed 5x7', FullBleed5x7, { inline: true })
+  .addWithInfo('Fullbleed 5x8', FullBleed5x8, { inline: true })
+  .addWithInfo('Fullbleed 6x4', FullBleed6x4, { inline: true })
+  .addWithInfo('Fullbleed 7x5', FullBleed7x5, { inline: true })
+  .addWithInfo('Fullbleed 8x5', FullBleed8x5, { inline: true })
+  .addWithInfo('Fullbleed 9x16', FullBleed9x16, { inline: true })
+  .addWithInfo('Fullbleed square 1x1', FullBleedSquare, { inline: true })
+  .addWithInfo(
+    'Vertically Centered: Full Screen Centered Title',
+    FullScreenCenteredTitle,
+    {
+      inline: true
+    }
+  )
+  .addWithInfo('Horizontal Aspect Ratios', HorizontalAspectRatios, {
     inline: true
   })
-  .addWithInfo('Horizontalaspectratios', HorizontalAspectRatios, {
-    inline: true
-  })
-  .addWithInfo('Threecolumn', ThreeColumn, { inline: true })
-  .addWithInfo('Threecolumncollapseone', ThreeColumnCollapseOne, {
+  .addWithInfo('Three Column', ThreeColumn, { inline: true })
+  .addWithInfo('Three Column Collapse One', ThreeColumnCollapseOne, {
     inline: true
   })
   .addWithInfo('Twocolumn', TwoColumn, { inline: true })

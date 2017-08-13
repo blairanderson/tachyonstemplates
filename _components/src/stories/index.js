@@ -9,7 +9,7 @@ import 'tachyons/css/tachyons.css';
 // TODO:
 // 1. Open each file in each folder.
 // 2. Run Prettier. fix errors. Run Prettier.
-
+import About from './About';
 import ArticleLists from './ArticleLists';
 import Articles from './Articles';
 import Avatars from './Avatars';

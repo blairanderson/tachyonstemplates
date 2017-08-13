@@ -6,7 +6,7 @@ import { setOptions } from '@storybook/addon-options';
 
 setOptions({
   name: 'Tachyons Components Playground',
-  url: '//www.tachyonstemplates.com/components/',
+  url: 'https://www.tachyonstemplates.com/components/',
   goFullScreen: false,
   showLeftPanel: true,
   showDownPanel: false,
