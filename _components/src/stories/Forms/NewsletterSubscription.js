@@ -15,7 +15,7 @@ export default () =>
             placeholder="Your Email Address"
             type="text"
             name="email-address"
-            value=""
+            defaultValue=""
             id="email-address"
           />
           <input
