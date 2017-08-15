@@ -24,8 +24,10 @@
       </div>
     </form>
   </div>
-  <div class="pa6 tc">
+  <div class="pv2 pv6-ns tc">
     {% assign sorted = (site.pages | sort: 'title' %}
-    {% for page in sorted %}{% if page.title %}<a class="near-black f4 ph4" href="{{page.url}}">{{page.title}}</a>{% endif %}{% endfor %}
+    {% for page in sorted %}{% if page.title %}
+    <a class="db dib-ns near-black f4 ph4" href="{{page.url}}">{{page.title}}</a>
+    {% endif %}{% endfor %}
   </div>
 </footer>
