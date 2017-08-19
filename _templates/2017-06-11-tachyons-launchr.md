@@ -13,7 +13,7 @@ img-desc:		"Tachyons Launchr Landing Page"
 external-links:
   preview:
     title: "Live Preview"
-    href: "http://www.blairanderson.co/tachyons-launchr/"
+    href: "https://www.blairanderson.co/tachyons-launchr/"
   download:
     title: "Download"
     href: "https://github.com/blairanderson/tachyons-launchr/archive/master.zip"

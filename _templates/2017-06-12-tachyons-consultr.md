@@ -15,7 +15,7 @@ img-desc:		  "Tachyons Consultant Marketing Site"
 external-links:
   preview:
     title: "Live Preview"
-    href: "http://www.blairanderson.co/tachyons-consultant/"
+    href: "https://www.blairanderson.co/tachyons-consultant/"
   download:
     title: "Download"
     href: "https://github.com/blairanderson/tachyons-consultant/archive/master.zip"
