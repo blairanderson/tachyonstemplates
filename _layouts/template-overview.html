@@ -49,6 +49,10 @@ layout: default
 			<!-- include disqus.html -->
 		</div>
 		<div class="fl w-100 w-40-ns">
+      <div class="ph2 ph4-ns tc">
+        <a class="near-black db tc" href="https://www.blairanderson.co/sharingbuttons/"><small>SharingButtons</small></a>
+        {% include social.html %}
+      </div>
 			<div class="ph2 ph4-ns">
         {% if page.long-description and page.long-description.size > 1 %}
 				<div class="bg-black-10 br2 ph4 pv3 mb4 mt4 mt0-ns">
@@ -74,7 +78,8 @@ layout: default
 <hr class="mw8 center">
 <h4 class="tc f2">See More Templates!</h4>
 <section class="cf pb2 mw8 center">
-  {% for template in site.templates reversed %}
+  {% assign templates = site.templates | reverse %}
+  {% for template in templates limit:3 %}
     {% if template.categories contains 'featured' and template.path != page.path %}
       {% include template-card.html template=template %}
     {% endif %}
