@@ -50,24 +50,20 @@ layout: default
 		</div>
 		<div class="fl w-100 w-40-ns">
 			<div class="ph2 ph4-ns">
+        {% if page.long-description and page.long-description.size > 1 %}
 				<div class="bg-black-10 br2 ph4 pv3 mb4 mt4 mt0-ns">
 					<h2 class="f2 pa0 ma0">Description:</h2>
 					<p class="f4 pa0 ma0">{{page.long-description}}</p>
 				</div>
+        {% endif %}
+        {% if page.features.size > 0 %}
 				<div class="bg-black-10 br2 ph4 pv3 mb4">
 					<h3 class="f2 pa0 ma0">Features:</h3>
 					<ul class="pa0 ma0">
 						{% for feature in page.features %}<li class="f4 pa0 ma0">{{ feature }}</li>{% endfor %}
 					</ul>
 				</div>
-
-        <!-- <div class="bg-black-10 br2 ph4 pv3 mb4 mt4 mt0-ns"> -->
-          <!-- <h2 class="f2 pa0 ma0">Need Help?</h2> -->
-          <!-- <p class="f4 pa0 ma0"> -->
-            <!-- Need help figuring this out? Want a simple landing page? -->
-            <!-- <a href="http://www.serverlessconsultants.com/">Hire a developer to launch your site starting at $1000.00</a> -->
-          <!-- </p> -->
-        <!-- </div> -->
+        {% endif %}
 			</div>
 		</div>
 	</div>

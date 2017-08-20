@@ -25,11 +25,10 @@ meta-title: "Launch your website! Use a fast and responsive single page launcher
 
 features:
   - Super Fast and Lightweight - Tachyons is a very minimal framework and features atomic design.
-  - Simple - download OR clone and get started, change config and push to launch your own consulting landing page.
+  - Simple - download OR clone and get started, change config and push to create your launch site.
   - Flexible - update links in the `config` file and make it useful in 5-minutes.
-  - simple component based styling allows to easily change the colors for each panel and header gradient.
-  - Home Header background image is courtesy of DeathToStockPhoto. If you keep it, you must attribute them.
+  - background image is courtesy of DeathToStockPhoto(as credited in the footer). If you keep it, you must attribute them according to their <a href='https://deathtothestockphoto.com/wp-content/uploads/DeathtotheStockPhoto-PlainEnglishLicense9-2014.pdf'>license</a>
 
 long-description: > #
-  Countdown Theme was built to help you launch something! Most businesses and websites benefit from building a little bit of suspense before launching publicly. Its part of human dynamics that most people think something is cooler if they are forced to wait for it! This theme will help you out! Basically download it and update the date, title, change the background, change the links in the footer, and make the email list go to your campaign. Using any of the <a href='http://tachyons.io/docs/themes/skins/'>tachyons skins</a>. 
+  Countdown Theme was built to help you launch something! Most businesses and websites benefit from building a little bit of suspense before launching publicly. Its part of human dynamics that most people think something is cooler if they are forced to wait for it! This theme will help you out! Basically download it and update the date, title, change the background, change the links in the footer, and make the email list go to your campaign. Using any of the <a href='http://tachyons.io/docs/themes/skins/'>tachyons skins</a>.
 ---
