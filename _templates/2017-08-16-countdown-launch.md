@@ -2,7 +2,7 @@
 title:			Countdown Theme
 slug:			  tachyons-countdown
 layout:			template-overview
-src:			   /template-overviews/tachyons-countdown
+src:			   /template-overviews/tachyons-countdown/
 background:  "#357edd"
 color:       "#f4f4f4"
 categories:		open-source featured
@@ -13,7 +13,7 @@ img-desc:		  "Tachyons countdown single page theme - launch"
 external-links:
   preview:
     title: "Live Preview"
-    href: "https://www.blairanderson.co/tachyons-consultant/"
+    href: "https://www.blairanderson.co/countdown-tachyons-jekyll/"
   download:
     title: "Download"
     href: "https://github.com/blairanderson/countdown-tachyons-jekyll/archive/master.zip"
@@ -21,7 +21,7 @@ external-links:
     title: "View Source"
     href: "https://github.com/blairanderson/countdown-tachyons-jekyll/"
 
-meta-title: "Launch your website! Use a fast and responsive single page launcher with a built-in countdown timer. You can customize the title and timer and background image very easily. Using and of the <a href='http://tachyons.io/docs/themes/skins/'>tachyons skins</a>. Built using tachyons - Countdown Launcher was built to display your consulting company marketing services, a few images(one for each service provided), and a contact section for phone/email. All linked in a single page."
+meta-title: "Launch your website! Use a fast and responsive single page launcher with a built-in countdown timer. You can customize the title and timer and background image very easily. Built using tachyons - Countdown Launcher was built to display your consulting company marketing services, a few images(one for each service provided), and a contact section for phone/email. All linked in a single page."
 
 features:
   - Super Fast and Lightweight - Tachyons is a very minimal framework and features atomic design.
@@ -31,5 +31,5 @@ features:
   - Home Header background image is courtesy of DeathToStockPhoto. If you keep it, you must attribute them.
 
 long-description: > #
-  Countdown Theme was built to help you launch something! Most businesses and websites benefit from building a little bit of suspense before launching publicly. Its part of human dynamics that most people think something is cooler if they are forced to wait for it! This theme will help you out! Basically download it and update the date, title, change the background, change the links in the footer, and make the email list go to your campaign.
+  Countdown Theme was built to help you launch something! Most businesses and websites benefit from building a little bit of suspense before launching publicly. Its part of human dynamics that most people think something is cooler if they are forced to wait for it! This theme will help you out! Basically download it and update the date, title, change the background, change the links in the footer, and make the email list go to your campaign. Using any of the <a href='http://tachyons.io/docs/themes/skins/'>tachyons skins</a>. 
 ---
