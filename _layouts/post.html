@@ -28,13 +28,13 @@ layout: default
 		{% endif  %}
 		<ul class="">
 			{% if author.url %}
-			<li><a href="{{ author.url }}">WEB@{{ author.url }}</a></li>
+			<li><a href="{{ author.url }}">WEB: {{ author.url }}</a></li>
 			{% endif %}
 			{% if author.github %}
-			<li><a href="https://github.com/{{ author.github }}">GitHub@{{ author.github }}</a></li>
+			<li><a href="https://github.com/{{ author.github }}">GitHub: {{ author.github }}</a></li>
 			{% endif %}
 			{% if author.twitter %}
-			<li><a href="https://twitter.com/{{ author.twitter }}">Twitter@{{ author.twitter }}</a></li>
+			<li><a href="https://twitter.com/{{ author.twitter }}">Twitter: {{ author.twitter }}</a></li>
 			{% endif %}
 		</ul>
 	</div>

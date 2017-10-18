@@ -1,9 +1,6 @@
-
 // Converted Variables
 
-
 // Custom Media Query Variables
-
 
 /*
 
@@ -12,7 +9,6 @@
   Add custom styles here.
 
 */
-
 
 blockquote {
   @extend .athelas !optional;
@@ -25,8 +21,6 @@ blockquote {
   @extend .b--blue !optional;
 }
 
-
-
 .post-body {
   .highlight {
     @extend .ma0 !optional;
@@ -35,10 +29,5 @@ blockquote {
 
   p {
     @extend .f5 !optional;
-  }
-
-  h1, h2, h3,h4,h5,h6, p {
-    @extend .center !optional;
-    @extend .mw6 !optional;
   }
 }
