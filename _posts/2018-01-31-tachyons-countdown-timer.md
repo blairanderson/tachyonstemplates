@@ -53,6 +53,10 @@ Wherever you want the countdown timer to show up... Add this HTML
 </div>
 {% endhighlight  %}
 
+Notice you can change COLORS `bg-blue` and  `bg-dark-blue` can be anything you want!
+
+Go Gold, or Red! Any Tachyons Color can be used here.
+
 ## 3. Add the Javascript!
 
 {% highlight javascript %}
@@ -95,8 +99,8 @@ updateClock();
 }
 
 // example 15 days out
-var deadline = new Date(Date.parse(new Date()) + 15 _ 24 _ 60 _ 60 _ 1000);
-// example 1 day out = new Date(Date.parse(new Date()) + 1 _ 24 _ 60 _ 60 _ 1000);
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+// example 1 day out = new Date(Date.parse(new Date()) + 1 * 24 * 60 * 60 * 1000);
 
 if (new Date() > deadline) {
   alert('COUNTDOWN COMPLETE! \n Some Call to Action!!!');
@@ -104,6 +108,8 @@ if (new Date() > deadline) {
 
 initializeClock('clockdiv', deadline);
 {% endhighlight %}
+
+Notice here the date is written in the javascript at **15 days**. This needs to be updated in the javascript but its fairly easy to do!
 
 ### To see a working demo, checkout the [Countdown Theme](https://www.tachyonstemplates.com/template-overviews/tachyons-countdown/) we created!
 
