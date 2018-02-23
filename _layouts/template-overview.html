@@ -9,7 +9,7 @@ layout: default
   </div>
 </article>
 
-<!-- Page Content -->
+<!-- BREADCRUMBS -->
 <div class="db mw8 ph4 pv3 mv4 bg-black-10 br2 center">
   <a href="/">Tachyons Templates</a>
   /
@@ -23,6 +23,8 @@ layout: default
   {% endfor %}
   <a href="{{page.url}}">{{ page.title }}</a>
 </div>
+
+<!-- Page Content -->
 
 <div class="mw8 center">
 	<div class="cf">
@@ -49,6 +51,10 @@ layout: default
 			<!-- include disqus.html -->
 		</div>
 		<div class="fl w-100 w-40-ns">
+      <div class="ph2 ph4-ns tc">
+        <a class="db ba pv2 br3 black no-underline b--light-green bg-transparent hover-bg-light-green bg-animate tc mw6 center fw1"
+         href="/contact/">Submit Your Own Templates</a>
+      </div>
       <div class="ph2 ph4-ns tc">
         <a class="near-black db tc" href="https://www.blairanderson.co/sharingbuttons/"><small>SharingButtons</small></a>
         {% include social.html %}
