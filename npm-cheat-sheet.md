@@ -4,16 +4,18 @@ title: NPM Cheat Sheet
 description: "NPM Cheat Sheet"
 ---
 
+> [Suggest Updates](https://github.com/blairanderson/tachyonstemplates/blob/master/npm-cheat-sheet.md)
+
 # npm cheat sheet
 
 For the full [table of contents](#toc) see below, but first here is a quick cheatsheet of several `npm` commands:
 
-* [Installing npm](#installingnpm)
-* [Update npm](#updatenpm)
-* [Search for npm packages](#searchfornpmpackages)
-* [View details of a npm package](#viewdetailsofanpmpackage)
-* [Installing a npm package locally](#installinganpmpackagelocally)
-* [Installing a npm package into an application](#installinganpmpackageintoanapplication)
+* [Installing npm](#installing-npm)
+* [Update npm](#update-npm)
+* [Search for npm packages](#search-for-npm-packages)
+* [View details of a npm package](#view-details-of-a-npm-package)
+* [Installing a npm package locally](#installing-a-npm-package-locally)
+* [Installing a npm package into an application](#installing-a-npm-package-into-anapplication)
 * [Understanding Global versus Local installs in npm](#understandingGlobalversusLocalinstallsinnpm)
 * [Global Package Installation](#globalPackageInstallation)
 * [Uninstalling a package locally](#uninstallingapackagelocally)
@@ -22,13 +24,13 @@ For the full [table of contents](#toc) see below, but first here is a quick chea
 * [Cloning a module from Github](#cloningamodulefromGithub)
 * [Linking any npm package locally](#linkinganynpmpackagelocally)
 * [Linking local npm packages to multiple applications](#linkinglocalnpmpackagestomultipleapplications)
-* [Unlinking a npm package from an application](#unlinkinganpmpackagefromanapplication)
-* [Unlinking a npm package from your system](#unlinkinganpmpackagefromyoursystem)
-* [Create a new npm package](#createanewnpmpackage)
-* [Creating a new user account on npm](#creatinganewuseraccountonnpm)
-* [Publishing a npm package](#publishinganpmpackage)
-* [Unpublishing a npm package](#unpublishinganpmpackage)
-* [Managing owners of packages](#managingownersofpackages)
+* [Unlinking a npm package from an application](#unlinking-a-npm-package-from-an-application)
+* [Unlinking a npm package from your system](#unlinking-a-npm-package-from-your-system)
+* [Create a new npm package](#create-a-new-npm-package)
+* [Creating a new user account on npm](#creating-a-new-user-account-on-npm)
+* [Publishing a npm package](#publishing-a-npm-package)
+* [Unpublishing a npm package](#unpublishing-a-npm-package)
+* [Managing owners of packages](#managing-owners-of-packages)
 
 ## Installing npm [back to top](#cheatsheet)
 
