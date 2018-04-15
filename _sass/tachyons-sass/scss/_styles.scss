@@ -28,6 +28,8 @@ blockquote {
 
   .highlight {
     @extend .ma0 !optional;
+    @extend .ph4 !optional;
+    @extend .pv3 !optional;
     overflow-y: scroll;
   }
 
