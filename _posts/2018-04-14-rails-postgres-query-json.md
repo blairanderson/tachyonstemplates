@@ -42,8 +42,6 @@ user.settings["email_newsletter"] == 'confirmed'
 
 JSON does not have knowledge of  ruby symbols!
 
-
-
 ## 3. Can we Query JSON attributes!?!
 
 #### **HECK YEAAAA**
