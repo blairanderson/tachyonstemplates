@@ -27,12 +27,11 @@ I can confirm that PostgreSQL has native support, check your database documentat
 **Top Secret Tip:** Its *EXACTLY*  the same as saving regular attributes!
 
 {% highlight ruby %}
-settings = {
+
+user.update(settings: {
   email_newsletter: 'confirmed',
   cheese: {favorite: 'blue', worst: 'cheddar'}
-}
-
-user.update({settings: settings})
+})
 
 user.settings["email_newsletter"] == 'confirmed'
 #=> true
