@@ -29,5 +29,6 @@ blockquote {
 
   p {
     @extend .f5 !optional;
+    @extend .lh-copy !optional;
   }
 }

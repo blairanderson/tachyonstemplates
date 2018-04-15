@@ -39,7 +39,7 @@ user.settings["email_newsletter"] == 'confirmed'
 
 {% endhighlight  %}
 
-REMEMBER that symbols in your hashes will be converted to strings!
+> REMEMBER that symbols in your hashes will be converted to strings!
 
 JSON does not have knowledge of  ruby symbols!
 
@@ -47,11 +47,11 @@ JSON does not have knowledge of  ruby symbols!
 
 ## 3. Can we Query JSON attributes!?!
 
-**HECK YEAAAA**
+#### **HECK YEAAAA**
 
-Lets find all users that have confirmed the newsletter and their favorite cheese is `blue`...
+Lets find **all users** that have **confirmed the newsletter** and their favorite cheese is **`blue`**.
 
-The query will look like this:
+The final query will look like this:
 
 {% highlight sql %}
 SELECT * FROM "users"
