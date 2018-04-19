@@ -19,7 +19,7 @@ OrderItems.where(account_id: current_account.id)
     .group_by_month.pluck("SUM(price_amount_cents)")
 {% endhighlight  %}
 
-So we're looking to group by month, and scope this to  a certain account... this is pretty straight forward...
+So we're looking to **group by month**, and **scope this to an account** pretty straight forward...
 
 But then I needed to represent more data on the page.
 
@@ -33,11 +33,27 @@ coupons = OrderItems.where(account_id: current_account.id)
     .group_by_month.pluck("SUM(coupon_amount_cents)")
 {% endhighlight  %}
 
-All good and fine, as you can see pretty reasonable requests... "Show as much data as helpful"...
+All good and fine, as you can see pretty reasonable requests... _"Show as much data as helpful"_...
 
-### Could it be more efficient?
+### Could It Be More Efficient?
 
-How about something like this?
+Plucking multiple columns seemed like it should have a native API.
+
+But the current API feels awkward:
+
+{% highlight ruby %}
+sales, refunds, coupons = OrderItems.where(account_id: current_account.id)
+    .group_by_month.pluck([
+        "SUM(price_amount_cents)",
+        "SUM(refund_amount_cents)",
+        "SUM(coupon_amount_cents)"
+      ]).first
+{% endhighlight  %}
+
+Not Bad, but whats that first thing? and setting multiple variables in a single line is kinda odd depending on your project.
+
+
+### How would I want it to look like?
 
 {% highlight ruby %}
 data = OrderItems.where(account_id: current_account.id).group_by_month.pluckm({
@@ -47,7 +63,7 @@ data = OrderItems.where(account_id: current_account.id).group_by_month.pluckm({
 })
 {% endhighlight  %}
 
-Seemed pretty reasonable and all good so I created **pluck_multi.rb** and started writing some code:
+This also seemed pretty reasonable, so I created **pluck_multi.rb** and started writing some code:
 
 {% highlight ruby %}
 module PluckMulti
@@ -67,7 +83,20 @@ end
 ActiveRecord::Base.send(:include, PluckMulti)
 {% endhighlight  %}
 
+**And it worked like a charm!**
 
-This little Gem ended up being super simple, and a super cool way for me to be like "wow, i actually improved my own life a tiny little bit"...
+This little Gem ended up being super simple, and a super cool way for me to be like "_wow, i actually improved my own life a tiny little bit_"...
 
-After including the file in app startup, all my Models got slightly more helpful for me, and thats how my love story with rails goes...
+I put this file inside **/lib/extensions/pluck_multi.rb**
+
+Then created an initializer which required all files in the extension folder:
+
+{% highlight ruby %}
+Dir[
+  Rails.root.join("lib/extensions/\*.rb")
+].each do |file|
+  require file
+end
+{% endhighlight  %}
+
+After including these files, all my Models got slightly more helpful for me, and thats how my love story with rails goes...
