@@ -15,7 +15,8 @@ Recently I was looking for a more efficient way to query data, and I love how ea
 Specifically loved that I could scope and group and pluck in a single query.
 
 {% highlight ruby %}
-OrderItems.where(account_id: current_account.id).group_by_month.pluck("SUM(price_amount_cents)")
+OrderItems.where(account_id: current_account.id)
+    .group_by_month.pluck("SUM(price_amount_cents)")
 {% endhighlight  %}
 
 So we're looking to group by month, and scope this to  a certain account... this is pretty straight forward...
@@ -24,9 +25,12 @@ But then I needed to represent more data on the page.
 
 
 {% highlight ruby %}
-sales = OrderItems.where(account_id: current_account.id).group_by_month.pluck("SUM(price_amount_cents)")
-refunds = OrderItems.where(account_id: current_account.id).group_by_month.pluck("SUM(refund_amount_cents)")
-coupons = OrderItems.where(account_id: current_account.id).group_by_month.pluck("SUM(coupon_amount_cents)")
+sales = OrderItems.where(account_id: current_account.id)
+    .group_by_month.pluck("SUM(price_amount_cents)")
+refunds = OrderItems.where(account_id: current_account.id)
+    .group_by_month.pluck("SUM(refund_amount_cents)")
+coupons = OrderItems.where(account_id: current_account.id)
+    .group_by_month.pluck("SUM(coupon_amount_cents)")
 {% endhighlight  %}
 
 All good and fine, as you can see pretty reasonable requests... "Show as much data as helpful"...
