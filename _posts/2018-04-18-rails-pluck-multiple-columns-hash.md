@@ -72,8 +72,11 @@ module PluckMulti
   class_methods do
     def pluckm(many={}, options={})
       raise(ArgumentError.new("Missing attributes! should look like Model.pluckm({some_name: 'SUM(some_column_integer)'})")) if many.empty?
+      values = Array.wrap(
+        self.pluck(many.values.join(", ")).first
+      )
       Hash[
-        many.keys.zip(self.pluck(many.values.join(", ")).first)
+        many.keys.zip(values)
       ]
     end
   end
