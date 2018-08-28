@@ -1,0 +1,20 @@
+<header class="bg-white w-100 ph3 pv3 pv4-ns ph4-m ph5-l bb b--light-gray">
+  <nav class="tc">
+    <div class="db dib-ns tc mb3 mb0-ns">
+    <a href="/" title="Tachyons Templates"
+      class="link dim b mr0 mr3-ns f3 ba bw2 b--black"
+      style="color: rgb(90,128,245); border-color: rgb(90,128,245);"
+      >TT</a>
+    </div>
+    {% for service in site.pages %}
+      {% if service.layout == "service" %}
+      <a class="link dim gray tc f6 f5-ns db dib-ns mr0 mr3-ns mb3 mb0-ns" href="{{service.path}}" title="{{service.title}}">
+        {{service.title}}
+      </a>
+      {% endif %}
+    {% endfor %}
+    <a class="link dim gray tc f6 f5-ns db dib-ns mr0 mr3-ns mb0" href="/contact/" title="">
+      Contact
+    </a>
+  </nav>
+</header>

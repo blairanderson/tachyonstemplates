@@ -1,5 +1,5 @@
 ---
-title:			"Tachyons Launchr"
+title:			"Tachyons App Launchr"
 slug:			   tachyons-launchr
 layout:			template-overview
 src:			   /template-overviews/tachyons-launchr
