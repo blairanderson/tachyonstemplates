@@ -1,5 +1,5 @@
 ---
-title:			Tachyons Landing Page Starter App Website
+title:			Tachyons Web Launchr
 slug:			  tachyons-web-launchr
 layout:			template-overview
 src:			   /template-overviews/tachyons-web-launchr/
@@ -7,8 +7,8 @@ background:  "#357edd"
 color:       "#f4f4f4"
 categories:		open-source featured
 description:	"Quick and Simple landing page for web apps, Free Download - Built to be fast and responsive"
-img-src:		  "https://rawgit.com/blairanderson/countdown-tachyons-jekyll/master/screenshot.png"
-img-src-tiny: "https://rawgit.com/blairanderson/countdown-tachyons-jekyll/master/screenshot-tiny.png"
+img-src:		  "https://rawgit.com/blairanderson/tachyons-web-launchr/master/screenshot.png"
+img-src-tiny: "https://rawgit.com/blairanderson/tachyons-web-launchr/master/screenshot-tiny.png"
 img-desc:		  "Tachyons countdown single page theme - launch"
 external-links:
   preview:
