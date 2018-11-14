@@ -24,10 +24,29 @@
       </div>
     </form>
   </div>
-  <div class="pv2 pv6-ns tc">
-    {% assign sorted = (site.pages | sort: 'title' %}
-    {% for page in sorted %}{% if page.title %}
-    <a class="db dib-ns near-black f4 ph4" href="{{page.url}}">{{page.title}}</a>
-    {% endif %}{% endfor %}
+  <div class="pv2 pv6-ns">
+    <div class="fl w-50-ns w-100">
+      <h3>Resources</h3>
+      <ul>
+        {% assign sorted = (site.pages | sort: 'title' %}
+        {% for page in sorted %}{% if page.title %}
+        {% unless page.layout == "service" %}
+        <li><a class="db dib-ns near-black f4 ph4" href="{{page.url}}">{{page.title}}</a></li>
+        {% endunless %}
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
+    <div class="fl w-50-ns w-100">
+      <h3>Services</h3>
+      <ul>
+        {% assign sorted = (site.pages | sort: 'title' %}
+        {% for page in sorted %}{% if page.title %}
+        {% if page.layout == "service" %}
+        <li><a class="db dib-ns near-black f4 ph4" href="{{page.url}}">{{page.title}}</a></li>
+        {% endif %}
+        {% endif %}{% endfor %}
+      </ul>
+
+    </div>
   </div>
 </footer>
