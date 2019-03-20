@@ -119,7 +119,7 @@ function initializeClock(id, endtime) {
 
 // example 15 days out
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-// example 1 day out = new Date(Date.parse(new Date()) + 1 _ 24 _ 60 _ 60 _ 1000);
+// example 1 day out = new Date(Date.parse(new Date()) + 1 * 24 * 60 * 60 * 1000);
 
 if (new Date() > deadline) {
   alert("COUNTDOWN COMPLETE! \n Some Call to Action!!!");
