@@ -20,24 +20,26 @@ layout: default
 	</footer>
 </article>
 
-<div class="cf bt b--light-blue ph3">
-	<div class="fl w-100 w-50-ns pa2">{% include disqus.html %}</div>
-	<div class="fl w-100 w-50-ns pa2 ">
-		{% if author.desc %}
-			<p>{{ author.desc }}</p>
-		{% endif  %}
-		<ul class="">
-			{% if author.url %}
-			<li><a href="{{ author.url }}">WEB: {{ author.url }}</a></li>
-			{% endif %}
-			{% if author.github %}
-			<li><a href="https://github.com/{{ author.github }}">GitHub: {{ author.github }}</a></li>
-			{% endif %}
-			{% if author.twitter %}
-			<li><a href="https://twitter.com/{{ author.twitter }}">Twitter: {{ author.twitter }}</a></li>
-			{% endif %}
-		</ul>
+<div class="mw7 ph3 pv2 center">
+	<div class="ba b--light-blue ph3">
+		<div class="pa2">
+			{% if author.desc %}
+				<p>{{ author.desc }}</p>
+			{% endif  %}
+			<ul class="">
+				{% if author.url %}
+				<li><a href="{{ author.url }}">WEB: {{ author.url }}</a></li>
+				{% endif %}
+				{% if author.github %}
+				<li><a href="https://github.com/{{ author.github }}">GitHub: {{ author.github }}</a></li>
+				{% endif %}
+				{% if author.twitter %}
+				<li><a href="https://twitter.com/{{ author.twitter }}">Twitter: {{ author.twitter }}</a></li>
+				{% endif %}
+			</ul>
+		</div>
 	</div>
+	{% include disqus.html %}
 </div>
 
 <hr>

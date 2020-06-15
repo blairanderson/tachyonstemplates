@@ -1,25 +1,49 @@
 <footer>
-  <div class="cover bg-left bg-center-l pv4" style="background-image: url(/img/bg.png)">
-    <form action="//tachyonstemplates.us16.list-manage.com/subscribe/post?u=3ff847fac68c99ba4cbf378be&amp;id=189a0e77be" method="post"
-          id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-          class="center pa3" target="_blank" novalidate>
+  <div
+    class="cover bg-left bg-center-l pv4"
+    style="background-image: url(/img/bg.png)"
+  >
+    <form
+      action="//tachyonstemplates.us16.list-manage.com/subscribe/post?u=3ff847fac68c99ba4cbf378be&amp;id=189a0e77be"
+      method="post"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      class="center pa3"
+      target="_blank"
+      novalidate
+    >
       <div>
-        <h3 class="pa0 f3 f2-ns mb3 mt0 white tc">Want more Tachyons Templates?</h3>
-        <h5 class="pa0 f4 f3-ns mb3 white tc">Subscribe to our mailing list to receive an update when new items arrive!</h5>
+        <h3 class="pa0 f3 f2-ns mb3 mt0 white tc">
+          Want more Tachyons Templates?
+        </h3>
+        <h5 class="pa0 f4 f3-ns mb3 white tc">
+          Subscribe to our mailing list to receive an update when new items
+          arrive!
+        </h5>
         <div class="cf mw7 center">
           <label class="clip" for="email-address">Email Address</label>
-          <input placeholder="Your Email Address"
-                 type="email"
-                 name="EMAIL"
-                 class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns">
-           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3ff847fac68c99ba4cbf378be_189a0e77be" tabindex="-1" value=""></div>
+          <input
+            placeholder="Your Email Address"
+            type="email"
+            name="EMAIL"
+            class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns"
+          />
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input
+              type="text"
+              name="b_3ff847fac68c99ba4cbf378be_189a0e77be"
+              tabindex="-1"
+              value=""
+            />
+          </div>
 
           <input
-                  class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
-                  name="subscribe"
-                  type="submit"
-                  value="Subscribe">
+            class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer w-100 w-25-m w-20-l br2-ns br--right-ns"
+            name="subscribe"
+            type="submit"
+            value="Subscribe"
+          />
         </div>
       </div>
     </form>
@@ -28,25 +52,24 @@
     <div class="fl w-50-ns w-100">
       <h3>Resources</h3>
       <ul>
-        {% assign sorted = (site.pages | sort: 'title' %}
-        {% for page in sorted %}{% if page.title %}
-        {% unless page.layout == "service" %}
-        <li><a class="db dib-ns near-black f4 ph4" href="{{page.url}}">{{page.title}}</a></li>
-        {% endunless %}
-        {% endif %}{% endfor %}
+        {% assign sorted = (site.pages | sort: 'title' %} {% for page in sorted
+        %}{% if page.title %} {% unless page.layout == "service" %}
+        <li>
+          <a class="db dib-ns near-black f4 ph4" href="{{page.url}}"
+            >{{page.title}}</a
+          >
+        </li>
+        {% endunless %} {% endif %}{% endfor %}
       </ul>
     </div>
     <div class="fl w-50-ns w-100">
       <h3>Services</h3>
       <ul>
-        {% assign sorted = (site.pages | sort: 'title' %}
-        {% for page in sorted %}{% if page.title %}
-        {% if page.layout == "service" %}
-        <li><a class="db dib-ns near-black f4 ph4" href="{{page.url}}">{{page.title}}</a></li>
-        {% endif %}
-        {% endif %}{% endfor %}
+        {% assign sorted = (site.pages | sort: 'title' %} {% for page in sorted
+        %}{% if page.title %} {% if page.layout == "service" %}
+        <!-- <li><a class="db dib-ns near-black f4 ph4" href="{{page.url}}">{{page.title}}</a></li> -->
+        {% endif %} {% endif %}{% endfor %}
       </ul>
-
     </div>
   </div>
 </footer>
