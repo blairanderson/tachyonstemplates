@@ -1,10 +1,22 @@
 ---
 layout: post
-title: "Netlify: Multiple Repos on a Single Domain"
+title: "Netlify: Deploy Multiple React Repositories on a Single Site"
 date: 2020-06-23
 description: "A PROTIP for mapping repos and apps to different subdirectories on Netlify. "
 author: blair
 ---
+
+I build static sites with Jekyll because its simple and file-backed.
+
+I build dynamic sites with React because its simple and deterministic.
+
+Sometimes we find a need to deploy a [react application inside of jekyll](https://www.blairanderson.co/2020/create-react-jekyll/), and its main drawback is locally building/committing the build each time you want to deploy.
+
+Just like if you were sprinkling jquery into a regular website, you have to deploy the assets.
+
+Below we have a solution to use netlify redirects/rewrites, as a way to reverse proxy a subdirectory path onto the index of another netlify project.
+
+That netlify project can be build from a separate repo, or from another folder in a mono-repo style.
 
 ### Root Repo App
 
