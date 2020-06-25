@@ -15,13 +15,15 @@ exclude:          [
   _data,
   _components,
 ]
+
 whitelist:
   - jekyll-redirect-from
+
 # Dependencies
 markdown:         kramdown
 kramdown:
-  # use Github Flavored Markdown
   input: GFM
+  # use Github Flavored Markdown
 # highlighter:      rouge
 # Permalinks
 permalink:        pretty
@@ -29,8 +31,6 @@ permalink:        pretty
 url:              https://www.tachyonstemplates.com
 enforce_ssl:      www.tachyonstemplates.com
 encoding:         UTF-8
-host:             127.0.0.1
-port:             9001
 
 # Gems
 gems:
