@@ -63,12 +63,15 @@
       </ul>
     </div>
     <div class="fl w-50-ns w-100">
-      <h3>Services</h3>
+      <h3>Articles</h3>
       <ul>
-        {% assign sorted = (site.pages | sort: 'title' %} {% for page in sorted
-        %}{% if page.title %} {% if page.layout == "service" %}
-        <!-- <li><a class="db dib-ns near-black f4 ph4" href="{{page.url}}">{{page.title}}</a></li> -->
-        {% endif %} {% endif %}{% endfor %}
+        {% for page in site.posts limit: 6 %}
+        <li>
+          <a class="db dib-ns near-black f4 ph4" href="{{page.url}}"
+            >{{page.title}}</a
+          >
+        </li>
+        {% endfor %}
       </ul>
     </div>
   </div>
