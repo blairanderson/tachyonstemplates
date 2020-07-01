@@ -25,3 +25,5 @@ This will build your site normally and encrypt the index page.
 the script to encrypt your page is `staticrypt _site/index.html P@SSW0RD -o _site/index.html` encrypts and overwrites the index.html page using the password `P@SSW0RD`
 
 [Here is an example password protected page](/example-password-page), the password is `P@SSW0RD`
+
+<!-- new Build command: `be jekyll build && npx staticrypt _site/example-password-page.html P@SSW0RD -o _site/example-password-page.html` -->
