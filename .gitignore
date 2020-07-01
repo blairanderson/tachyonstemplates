@@ -24,3 +24,6 @@ yarn-error.log*
 /node_modules
 /.sass-cache
 .DS_Store
+
+# Local Netlify folder
+.netlify
