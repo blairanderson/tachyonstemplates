@@ -19,3 +19,18 @@ namespace :fetch do
     `rm -rf bootstrap-#{CURRENT_BOOTSTRAP_VERSION}/`
   end
 end
+
+task :publish do
+  `JEKYLL_ENV=production bundle exec jekyll build`
+  `npx staticrypt _site/example-password-page/index.html P@SSW0RD -o _site/example-password-page/index.html`
+  `netlify deploy --open`
+  puts "run rake prod:publish to push to PRODUCTION"
+end
+
+namespace :prod do
+  task :publish do
+    `JEKYLL_ENV=production bundle exec jekyll build`
+    `npx staticrypt _site/example-password-page/index.html P@SSW0RD -o _site/example-password-page/index.html`
+    `netlify deploy --prod --open`
+  end
+end
