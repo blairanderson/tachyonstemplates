@@ -30,7 +30,7 @@ enforce_ssl:      www.tachyonstemplates.com
 encoding:         UTF-8
 
 # Gems
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-redirect-from
