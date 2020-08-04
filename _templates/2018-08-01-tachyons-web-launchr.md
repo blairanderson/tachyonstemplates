@@ -13,7 +13,7 @@ img-desc:		  "Tachyons countdown single page theme - launch"
 external-links:
   preview:
     title: "Live Preview"
-    href: "https://www.blairanderson.co/tachyons-web-launchr/"
+    href: "https://blairanderson.github.io/tachyons-web-launchr/"
   download:
     title: "Download"
     href: "https://github.com/blairanderson/tachyons-web-launchr/archive/master.zip"

@@ -13,7 +13,7 @@ img-desc:		  "Tachyons countdown single page theme - launch"
 external-links:
   preview:
     title: "Live Preview"
-    href: "https://www.blairanderson.co/countdown-tachyons-jekyll/"
+    href: "https://blairanderson.github.io/countdown-tachyons-jekyll/"
   download:
     title: "Download"
     href: "https://github.com/blairanderson/countdown-tachyons-jekyll/archive/master.zip"

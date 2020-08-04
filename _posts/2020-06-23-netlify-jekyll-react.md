@@ -10,7 +10,7 @@ I build static sites with Jekyll because its simple and file-backed.
 
 I build dynamic sites with React because its simple and deterministic.
 
-Sometimes we find a need to deploy a [react application inside of jekyll](https://www.blairanderson.co/2020/create-react-jekyll/), and its main drawback is locally building/committing the build each time you want to deploy.
+Sometimes we find a need to deploy a [react application inside of jekyll](https://blairanderson.github.io/2020/create-react-jekyll/), and its main drawback is locally building/committing the build each time you want to deploy.
 
 Just like if you were sprinkling jquery into a regular website, you have to deploy the assets.
 

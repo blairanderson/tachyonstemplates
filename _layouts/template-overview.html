@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="vh-50 dt w-100"  style="background-color: {{page.background}}">
+<article class="vh-50 dt w-100" style="background-color: {{page.background}}">
   <div class="dtc v-mid tc ph3 ph4-l" style="color: {{ page.color }}">
     <h1 class="f3 f2-m f-subheadline-l fw6 tc">{{ page.title }}</h1>
     <p class="f5 f4-m f2-l ">{{ page.description }}</p>
@@ -13,81 +13,89 @@ layout: default
 <div class="db mw8 ph4 pv3 mv4 bg-black-10 br2 center">
   <a href="/">Tachyons Templates</a>
   /
-  <a href="/template-categories/all-templates/?from={{page.slug}}">All Templates</a>
-  /
-  {% for cat in site.template-categories %}
-    {% if page.categories contains cat.slug %}
-      <a href="{{cat.url}}?from={{page.slug}}">{{cat.title}}</a>
-      /
-    {% endif %}
-  {% endfor %}
+  <a href="/template-categories/all-templates/?from={{page.slug}}"
+    >All Templates</a
+  >
+  / {% for cat in site.template-categories %} {% if page.categories contains
+  cat.slug %}
+  <a href="{{cat.url}}?from={{page.slug}}">{{cat.title}}</a>
+  / {% endif %} {% endfor %}
   <a href="{{page.url}}">{{ page.title }}</a>
 </div>
 
 <!-- Page Content -->
 
 <div class="mw8 center">
-	<div class="cf">
-		<div class="fl w-100 w-60-ns">
-			<div class="ba b--black-50">
-				<a
-					rel="nofollow noopener"
-					target="_blank"
-					onclick="ga('send', 'event', 'external-links', 'preview', '{{page.title}}');"
-					href="{{ page.external-links.preview.href }}">
-					<img class="" src="{{ page.img-src }}" alt="{{ page.img-desc }}">
-				</a>
-				<div class="cf">
-					{% for link in page.external-links %}
-						<a
-						href="{{link[1].href}}"
-						target="_blank"
-						onclick="ga('send', 'event', 'external-links', '{{link[0]}}', '{{page.title}}');"
-						rel="nofollow noopener"
-						class="bt b--black-50 pa2 dim db fl tc w-100 w-third-ns lh-title">{{link[1].title}}</a>
-				  {% endfor %}
-			  </div>
-			</div>
-			<!-- include disqus.html -->
-		</div>
-		<div class="fl w-100 w-40-ns">
+  <div class="cf">
+    <div class="fl w-100 w-60-ns">
+      <div class="ba b--black-50">
+        <a
+          rel="nofollow noopener"
+          target="_blank"
+          onclick="ga('send', 'event', 'external-links', 'preview', '{{page.title}}');"
+          href="{{ page.external-links.preview.href }}"
+        >
+          <img class="" src="{{ page.img-src }}" alt="{{ page.img-desc }}" />
+        </a>
+        <div class="cf">
+          {% for link in page.external-links %}
+          <a
+            href="{{link[1].href}}"
+            target="_blank"
+            onclick="ga('send', 'event', 'external-links', '{{link[0]}}', '{{page.title}}');"
+            rel="nofollow noopener"
+            class="bt b--black-50 pa2 dim db fl tc w-100 w-third-ns lh-title"
+            >{{link[1].title}}</a
+          >
+          {% endfor %}
+        </div>
+      </div>
+      <!-- include disqus.html -->
+    </div>
+    <div class="fl w-100 w-40-ns">
       <div class="ph2 ph4-ns tc">
-        <a class="db ba pv2 br3 black no-underline b--light-green bg-transparent hover-bg-light-green bg-animate tc mw6 center fw1"
-         href="/contact/">Submit Your Own Templates</a>
+        <a
+          class="db ba pv2 br3 black no-underline b--light-green bg-transparent hover-bg-light-green bg-animate tc mw6 center fw1"
+          href="/contact/"
+          >Submit Your Own Templates</a
+        >
       </div>
       <div class="ph2 ph4-ns tc">
-        <a class="near-black db tc" href="https://www.blairanderson.co/sharingbuttons/"><small>SharingButtons</small></a>
+        <a
+          class="near-black db tc"
+          href="https://blairanderson.github.io/sharingbuttons/"
+          ><small>SharingButtons</small></a
+        >
         {% include social.html %}
       </div>
-			<div class="ph2 ph4-ns">
+      <div class="ph2 ph4-ns">
         {% if page.long-description and page.long-description.size > 1 %}
-				<div class="bg-black-10 br2 ph4 pv3 mb4 mt4 mt0-ns">
-					<h2 class="f2 pa0 ma0">Description:</h2>
-					<p class="f4 pa0 ma0">{{page.long-description}}</p>
-				</div>
+        <div class="bg-black-10 br2 ph4 pv3 mb4 mt4 mt0-ns">
+          <h2 class="f2 pa0 ma0">Description:</h2>
+          <p class="f4 pa0 ma0">{{page.long-description}}</p>
+        </div>
+        {% endif %} {% if page.features.size > 0 %}
+        <div class="bg-black-10 br2 ph4 pv3 mb4">
+          <h3 class="f2 pa0 ma0">Features:</h3>
+          <ul class="pa0 ma0">
+            {% for feature in page.features %}
+            <li class="f4 pa0 ma0">{{ feature }}</li>
+            {% endfor %}
+          </ul>
+        </div>
         {% endif %}
-        {% if page.features.size > 0 %}
-				<div class="bg-black-10 br2 ph4 pv3 mb4">
-					<h3 class="f2 pa0 ma0">Features:</h3>
-					<ul class="pa0 ma0">
-						{% for feature in page.features %}<li class="f4 pa0 ma0">{{ feature }}</li>{% endfor %}
-					</ul>
-				</div>
-        {% endif %}
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 {{ content }}
 
-<hr class="mw8 center">
+<hr class="mw8 center" />
 <h4 class="tc f2">See More Templates!</h4>
 <section class="cf pb2 mw8 center">
-  {% assign templates = site.templates | reverse %}
-  {% for template in templates limit:3 %}
-    {% if template.categories contains 'featured' and template.path != page.path %}
-      {% include template-card.html template=template %}
-    {% endif %}
-  {% endfor %}
+  {% assign templates = site.templates | reverse %} {% for template in templates
+  limit:3 %} {% if template.categories contains 'featured' and template.path !=
+  page.path %} {% include template-card.html template=template %} {% endif %} {%
+  endfor %}
 </section>
